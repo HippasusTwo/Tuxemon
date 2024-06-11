@@ -7600,6 +7600,19 @@ msgid "spyder_intro_shopkeeper4"
 msgstr "I'm sorry, you are not a Gold member. This offer is for Gold members only."
 
 # spyder dialogs
+
+msgid "starter_happy_not_trash"
+msgstr "They are very happy not to be in the trash.\n They seem to want to hang out for a little while in fresh air. Who could blame them?"
+
+msgid "starter_wants_rest"
+msgstr "They look like they could use a rest."
+
+msgid "starter_talk"
+msgstr "They seem ready to rumble or play."
+
+msgid "starter_mischief"
+msgstr "Ew! They smell like they went digging in the trash again! Why?!\n ...Perhaps they were looking for other abandoned Tuxemon to free them?"
+
 msgid "spyder_papertown_stopthere"
 msgstr "Hey! What do you think you're doing?\n It's not safe to go into the wilds unless you have a tuxemon.\n Come buy one from our shop."
 

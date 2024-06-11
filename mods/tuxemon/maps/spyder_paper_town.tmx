@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="git" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="40" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="285">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="40" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="309">
  <properties>
   <property name="east" value="brideswood"/>
   <property name="edges" value="clamped"/>
@@ -198,6 +198,20 @@
     <property name="behav1" value="talk spyder_papertown_silver"/>
    </properties>
   </object>
+  <object id="298" name="Talk Starter" type="event" x="448" y="256" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog starter_happy_not_trash"/>
+    <property name="behav1" value="talk starter"/>
+    <property name="cond1" value="not variable_set route2billie:yes"/>
+   </properties>
+  </object>
+  <object id="308" name="Talk Starter" type="event" x="464" y="256" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog starter_mischief"/>
+    <property name="behav1" value="talk starter"/>
+    <property name="cond1" value="is variable_set route2billie:yes"/>
+   </properties>
+  </object>
   <object id="217" name="Teleport to Sea Route" type="event" x="0" y="224" width="16" height="64">
    <properties>
     <property name="act1" value="transition_teleport spyder_routec.tmx,39,35,0.3"/>
@@ -238,6 +252,75 @@
     <property name="act4" value="set_variable mymonchoice:rockitten"/>
     <property name="cond1" value="is variable_set rockittenchosen:yes"/>
     <property name="cond2" value="is party_size player,less_than,1"/>
+   </properties>
+  </object>
+  <object id="285" name="Following" type="event" x="400" y="256" width="16" height="16">
+   <properties>
+    <property name="act10" value="pathfind_to_player starter,,1"/>
+    <property name="cond2" value="is char_exists starter"/>
+    <property name="cond3" value="not char_moved player"/>
+    <property name="cond5" value="not button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="307" name="Following" type="event" x="416" y="256" width="16" height="16">
+   <properties>
+    <property name="act1" value="pathfind_to_player starter,up,1"/>
+    <property name="act2" value="char_face starter,down"/>
+    <property name="cond2" value="is char_exists starter"/>
+    <property name="cond3" value="is button_pressed K_RETURN"/>
+    <property name="cond5" value="is char_facing player,down"/>
+   </properties>
+  </object>
+  <object id="286" name="Follower Create Cat" type="event" x="384" y="304" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc starter,22,9,stand"/>
+    <property name="act10" value="pathfind_to_player starter"/>
+    <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act3" value="set_variable spawnedfollower:yes"/>
+    <property name="cond1" value="is variable_set mymonchoice:rockitten"/>
+    <property name="cond2" value="not char_exists starter"/>
+   </properties>
+  </object>
+  <object id="291" name="Template - Lambert" type="event" x="528" y="304" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc starter,24,11,stand"/>
+    <property name="act2" value="set_template starter,mons/lambert,adventurer"/>
+    <property name="act3" value="set_variable spawnedfollower:yes"/>
+    <property name="act4" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act9" value="pathfind_to_player starter"/>
+    <property name="cond1" value="is variable_set mymonchoice:lambert"/>
+    <property name="cond2" value="not char_exists starter"/>
+   </properties>
+  </object>
+  <object id="292" name="Follow - Agnite" type="event" x="464" y="288" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc starter,28,11,stand"/>
+    <property name="act2" value="set_template starter,mons/agnite,adventurer"/>
+    <property name="act3" value="set_variable spawnedfollower:yes"/>
+    <property name="act4" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act9" value="pathfind_to_player starter"/>
+    <property name="cond1" value="is variable_set mymonchoice:agnite"/>
+    <property name="cond2" value="not char_exists starter"/>
+   </properties>
+  </object>
+  <object id="287" name="Template- Nut" type="event" x="336" y="272" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc starter,26,10,stand"/>
+    <property name="act10" value="set_template starter,mons/nut,adventurer"/>
+    <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act3" value="set_variable spawnedfollower:yes"/>
+    <property name="cond1" value="is variable_set mymonchoice:nut"/>
+    <property name="cond2" value="not char_exists starter"/>
+   </properties>
+  </object>
+  <object id="289" name="FollowTemplate - Tweesher" type="event" x="272" y="304" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc starter,28,10,stand"/>
+    <property name="act10" value="set_template starter,mons/tweesher,penguin"/>
+    <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act3" value="set_variable spawnedfollower:yes"/>
+    <property name="cond1" value="is variable_set mymonchoice:tweesher"/>
+    <property name="cond2" value="not char_exists starter"/>
    </properties>
   </object>
   <object id="220" name="Chosen - Lambert" type="event" x="512" y="160" width="16" height="16">

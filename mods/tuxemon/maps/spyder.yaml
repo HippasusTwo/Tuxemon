@@ -254,6 +254,97 @@ events:
     - is variable_set combatstate_faint
     - is has_item player,friendship_scroll
     type: "event"
+  Follower Rockitten Outside:
+    actions:
+    - create_npc starter,4,4,stand
+    - teleport_to_player starter,,8
+    - set_char_attribute starter,ignore_collisions,True
+    conditions:
+    - is variable_set spawnedfollower:yes
+    - is variable_set mymonchoice:rockitten
+    - not location_inside
+    - not location_name spyder_paper_town
+    - not char_exists starter
+    type: "event"
+  Follower Nut:
+    actions:
+    - create_npc starter,4,4,stand
+    - teleport_to_player starter,,8
+    - set_template starter,mons/nut,adventurer
+    - set_char_attribute starter,ignore_collisions,True
+    conditions:
+    - is variable_set spawnedfollower:yes
+    - is variable_set mymonchoice:nut
+    - not location_inside
+    - not location_name spyder_paper_town
+    - not char_exists starter
+    type: "event"
+  Follower Lambert:
+    actions:
+    - create_npc starter,4,4,stand
+    - teleport_to_player starter,,8
+    - set_template starter,mons/lambert,adventurer
+    - set_char_attribute starter,ignore_collisions,True
+    conditions:
+    - is variable_set spawnedfollower:yes
+    - is variable_set mymonchoice:lambert
+    - not location_inside
+    - not location_name spyder_paper_town
+    - not char_exists starter
+    type: "event"
+  Follower Dragon:
+    actions:
+    - create_npc starter,4,4,stand
+    - teleport_to_player starter,,8
+    - set_template starter,mons/agnite,adventurer
+    - set_char_attribute starter,ignore_collisions,True
+    conditions:
+    - is variable_set spawnedfollower:yes
+    - is variable_set mymonchoice:agnite
+    - not location_inside
+    - not location_name spyder_paper_town
+    - not char_exists starter
+    type: "event"
+  Follower Birb:
+    actions:
+    - create_npc starter,4,4,stand
+    - teleport_to_player starter,,8
+    - set_template starter,mons/tweesher,adventurer
+    - set_char_attribute starter,ignore_collisions,True
+    conditions:
+    - is variable_set spawnedfollower:yes
+    - is variable_set mymonchoice:tweesher
+    - not location_inside
+    - not location_name spyder_paper_town
+    - not char_exists starter
+    type: "event"
+  Following:
+    actions:
+    - pathfind_to_player starter,,1
+    conditions:
+    - is char_exists starter
+    type: "event"
+  Follower Damaged:
+    actions:
+    - translated_dialog starter_wants_rest
+    - pathfind_to_player starter,,5
+    conditions:
+    - is get_monster_unhealthy player
+    - is char_exists starter
+    - is button_pressed K_RETURN
+    - is char_facing_char player,starter
+    type: "event"
+  Follower Talk:
+    actions:
+    - translated_dialog starter_talk
+    - pathfind_to_player starter,,5
+    conditions:
+    - not get_monster_unhealthy player
+    - is char_exists starter
+    - is button_pressed K_RETURN
+    - is char_facing_char player,starter
+    - not location_name spyder_paper_town
+    type: "event"
   Set Party Status:
     actions:
     - set_party_status player

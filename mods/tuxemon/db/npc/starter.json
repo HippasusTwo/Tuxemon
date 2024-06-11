@@ -1,0 +1,9 @@
+{
+  "slug": "starter",
+  "template": {
+    "sprite_name": "rockitten",
+    "combat_front": "penguin",
+    "slug": "noclass"
+  }
+
+}
