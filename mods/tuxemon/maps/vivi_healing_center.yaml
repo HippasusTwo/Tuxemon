@@ -38,9 +38,9 @@ events:
     type: "event"
   Talk NPC1:
     actions:
-    - translated_dialog spyder_cottoncafe_lotus1
+    - translated_dialog sortition_guy
     behav:
-    - talk spyder_cottoncafe_lotus
+    - talk spyder_cottonhouse2_davis
     type: "event"
   Talk Ada:
     actions:

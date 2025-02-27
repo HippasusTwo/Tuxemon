@@ -49,6 +49,7 @@ events:
     - remove_monster iid_slot_0
     - set_variable fight_count:0
     - clear_variable metshroom
+    - clear_variable evilknight
     - clear_variable goodbyeoldknight
     - clear_variable metdollfin
     - clear_variable foughtsales
