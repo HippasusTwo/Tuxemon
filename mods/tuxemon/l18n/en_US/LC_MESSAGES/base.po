@@ -12489,6 +12489,10 @@ msgstr "Flower Lady"
 
 msgid "vivi_town1"
 msgstr "Vivi Kingdom"
+msgid "vivi_town2"
+msgstr "Random Grassy Town"
+msgid "vivi_shop"
+msgid "Kingdom Mart"
 
 msgid "gamelost"
 msgstr "You lost the game! Better luck next time."

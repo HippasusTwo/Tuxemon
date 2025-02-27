@@ -4,7 +4,7 @@
   <property name="edges" value="clamped"/>
   <property name="map_type" value="town"/>
   <property name="scenario" value="vivi"/>
-  <property name="slug" value="taba_town"/>
+  <property name="slug" value="vivi_town2"/>
  </properties>
  <tileset firstgid="1" source="../gfx/tilesets/core_outdoor.tsx"/>
  <tileset firstgid="2776" source="../gfx/tilesets/core_set pieces.tsx"/>
@@ -51,11 +51,11 @@
   <object id="212" type="collision" x="0" y="688" width="192" height="112"/>
   <object id="213" type="collision" x="112" y="544" width="64" height="32"/>
   <object id="3" type="collision" x="464" y="624" width="128" height="16"/>
-  <object id="4" type="collision" x="192" y="592" width="272" height="368"/>
+  <object id="4" type="collision" x="192" y="592" width="272" height="208"/>
   <object id="6" type="collision" x="640" y="720" width="48" height="16"/>
   <object id="8" type="collision" x="704" y="720" width="16" height="16"/>
-  <object id="9" type="collision" x="640" y="800" width="96" height="32"/>
-  <object id="12" type="collision" x="736" y="640" width="96" height="240"/>
+  <object id="9" type="collision" x="640" y="768" width="96" height="32"/>
+  <object id="12" type="collision" x="736" y="640" width="96" height="160"/>
   <object id="13" type="collision" x="720" y="672" width="16" height="16"/>
   <object id="14" type="collision" x="640" y="496" width="192" height="144"/>
   <object id="15" type="collision" x="464" y="224" width="368" height="16"/>
@@ -78,7 +78,7 @@
   <object id="38" type="collision" x="480" y="688" width="48" height="16"/>
   <object id="39" type="collision" x="544" y="688" width="32" height="16"/>
   <object id="41" type="collision" x="464" y="768" width="16" height="16"/>
-  <object id="43" type="collision" x="496" y="768" width="80" height="48"/>
+  <object id="43" type="collision" x="496" y="768" width="80" height="32"/>
   <object id="44" type="collision" x="352" y="16" width="48" height="48"/>
   <object id="45" type="collision" x="336" y="64" width="16" height="16"/>
   <object id="46" type="collision" x="736" y="64" width="48" height="48"/>
@@ -110,7 +110,7 @@
   <object id="186" type="collision" x="832" y="624" width="32" height="160"/>
   <object id="187" type="collision" x="864" y="656" width="32" height="64"/>
   <object id="188" type="collision" x="992" y="0" width="32" height="336"/>
-  <object id="189" type="collision" x="992" y="432" width="32" height="384"/>
+  <object id="189" type="collision" x="992" y="432" width="32" height="368"/>
   <object id="190" type="collision" x="800" y="464" width="32" height="128"/>
   <object id="191" type="collision" x="960" y="176" width="32" height="128"/>
   <object id="199" type="collision" x="640" y="240" width="128" height="64"/>
@@ -122,8 +122,8 @@
   <object id="244" type="collision" x="832" y="288" width="16" height="16"/>
   <object id="192" type="collision" x="928" y="208" width="32" height="64"/>
   <object id="193" type="collision" x="928" y="496" width="32" height="96"/>
-  <object id="194" type="collision" x="960" y="752" width="32" height="64"/>
-  <object id="195" type="collision" x="928" y="784" width="32" height="64"/>
+  <object id="194" type="collision" x="960" y="752" width="32" height="48"/>
+  <object id="195" type="collision" x="928" y="784" width="32" height="16"/>
   <object id="199" type="collision" x="352" y="352" width="16" height="16"/>
  </objectgroup>
  <objectgroup color="#ffff00" id="7" name="Events">

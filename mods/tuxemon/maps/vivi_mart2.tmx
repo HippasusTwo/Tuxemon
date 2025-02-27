@@ -5,7 +5,7 @@
   <property name="inside" type="bool" value="true"/>
   <property name="map_type" value="shop"/>
   <property name="scenario" value="vivi"/>
-  <property name="slug" value="candy_scoop"/>
+  <property name="slug" value="vivi_shop"/>
  </properties>
  <tileset firstgid="1" source="../gfx/tilesets/core_city_and_country.tsx"/>
  <tileset firstgid="1441" source="../gfx/tilesets/core_indoor_floors.tsx"/>

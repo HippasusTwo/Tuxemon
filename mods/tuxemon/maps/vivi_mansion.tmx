@@ -142,42 +142,10 @@
     <property name="cond20" value="is button_pressed K_RETURN"/>
    </properties>
   </object>
-  <object id="69" name="RIP" type="event" x="-16" y="144" width="32" height="16">
-   <properties>
-    <property name="act10" value="translated_dialog vivipere"/>
-    <property name="cond1" value="is variable_set deadpet:vivipere"/>
-    <property name="cond10" value="is char_facing_tile player"/>
-    <property name="cond20" value="is button_pressed K_RETURN"/>
-   </properties>
-  </object>
   <object id="70" name="RIP" type="event" x="16" y="32" width="32" height="16">
    <properties>
     <property name="act2" value="translated_dialog vivi_grave2"/>
     <property name="cond1" value="is variable_set deadpet"/>
-    <property name="cond10" value="is char_facing_tile player"/>
-    <property name="cond20" value="is button_pressed K_RETURN"/>
-   </properties>
-  </object>
-  <object id="71" name="RIP" type="event" x="-16" y="112" width="32" height="16">
-   <properties>
-    <property name="act10" value="translated_dialog conileaf"/>
-    <property name="cond1" value="is variable_set deadpet:conileaf"/>
-    <property name="cond10" value="is char_facing_tile player"/>
-    <property name="cond20" value="is button_pressed K_RETURN"/>
-   </properties>
-  </object>
-  <object id="72" name="RIP" type="event" x="-16" y="96" width="32" height="16">
-   <properties>
-    <property name="act10" value="translated_dialog snaki"/>
-    <property name="cond1" value="is variable_set deadpet:snaki"/>
-    <property name="cond10" value="is char_facing_tile player"/>
-    <property name="cond20" value="is button_pressed K_RETURN"/>
-   </properties>
-  </object>
-  <object id="73" name="RIP" type="event" x="-16" y="80" width="32" height="16">
-   <properties>
-    <property name="act10" value="translated_dialog merlicun"/>
-    <property name="cond1" value="is variable_set deadpet:merlicun"/>
     <property name="cond10" value="is char_facing_tile player"/>
     <property name="cond20" value="is button_pressed K_RETURN"/>
    </properties>
