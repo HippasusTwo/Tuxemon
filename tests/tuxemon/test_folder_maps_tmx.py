@@ -17,7 +17,7 @@ FOLDER = "maps"
 MULTIPLIER = 16
 MIN_LAYERS = 4
 TMX_TYPES_PREFIXES = ("init", "collision", "event")
-EXPECTED_SCENARIOS = ["spyder", "xero", "vivi"]
+EXPECTED_SCENARIOS = ["spyder", "xero", "tobedefined", "vivi"]
 
 
 def expand_expected_scenarios() -> None:
