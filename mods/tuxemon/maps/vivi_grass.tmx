@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="64" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="249">
+ <properties>
+  <property name="edges" value="clamped"/>
+  <property name="map_type" value="town"/>
+  <property name="scenario" value="vivi"/>
+  <property name="slug" value="taba_town"/>
+ </properties>
+ <tileset firstgid="1" source="../gfx/tilesets/core_outdoor.tsx"/>
+ <tileset firstgid="2776" source="../gfx/tilesets/core_set pieces.tsx"/>
+ <tileset firstgid="4326" source="../gfx/tilesets/core_buildings.tsx"/>
+ <tileset firstgid="6676" source="../gfx/tilesets/core_city_and_country.tsx"/>
+ <tileset firstgid="8116" source="../gfx/tilesets/core_outdoor_nature.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="64" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmstNAzEQhp0NygHOXEgry6MThGggF0gDiFADpIG0AEiQBugCGkAiOeIVsjIy45Ude+2xx4df0UqRkm8efsz+MyHErHBdNUL8HOx03aT/T5W/8pfMfyN1O5DmGfA/Sj0NpGXlJ8//JvVuqS/A9mnxncORXY+0kvNU6mJMe/2DtWLKrWs9LZG8V34hTmQtPGTI79JPndYGfmq5t+V3VYv0fercm84ER6Ow/BTZ9TyH2tswUa17mx5eF8J/NxFiNfn7VIr12xT4YRw486cQxn8u17+zSDF4Tsx/Lzmn47QxCKFjj57pYrAAcdhmGoMQtbDQ6oFbDD6a3ZqwiRAD1f+v4PmFQB2spv+VOjdK3xH2R8r8Q6slnn9MlwFqwjQDGvI+lHr/h+w6N5W7YGz2DVj7OZyF4Rl4yzz3nNj13HNjx/g5sWO1n9N653sOrLOPyl8K/z69UBL/PsJmX91dv7sDcJl59M3/uMTBFAMK/dA319R73ue9ATb7o8AfW9X/Vvmp8itPwFx77vP5ubwXoXofUJzK+6A8XSG9EKY5AAV+Gy+E7nNz8X1Sn4GYvBDQ5+fjDcl1BgLrQvdC2npDqPp/MKnzjVrTfL1grj3/C7pl9BA=
+  </data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="64" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmbluE0EcxsfK0hBAig0BGWzvgoCSmgBVOKQEQZ4gaZNARWweg4KrQUp6KHgAwn08AYjOVAEijnAVKBXfylnFHs94/v/ZGe8m5pN+Gu058+23c6wtBE+XCuZzZgMhbhaFuAVugzvgLng7tInp+MqIEB/BJ/AZrI50HlfxDkyi7otBdykr2a86t9e1FP+xnsPPC/ASvAKvi7zje7G9D4yC/eCAdFyldfg/hvYeD7pLWcl+1bm68mhg9j+1cfwH2vsT/AK/wR+p/abj49g+C86B8+AC0b+P/JNyguG/VhIiBBE4DI6UOs8zHb8GvwugDhrgOrg3bPbPzf9DGxSp/O8Adey/DBqFVv/3rWU8j8fgCXgKnhXt8m9K/v8O9a5X5X9Ksa/u+Rl8gd+v4Bv4DtaK2eWv8u9bZfSXg+AQqIBqyS5/rvLiP63k/BcKrT7c2EAnqv/xPowBaZTkn/ifkNCJ6l83juxEPx0Gu8BusEcxr6nGNtfS5W+D6n3R+T8JL2PgFDgNzii8qcY217Lt/1Sp/Mfz9yy8zIF5cAVcVXhTjW0UrRvmrlimecGVTPOoD1H8y/MCde3LLfPmX9dO6tqXW1ZSvFsRrq1aUOtRp66d3P5Azd+VuO8d9z6mdZIsav6uxH3vuPfZ6vmnvV+W+T9qY1lzjFrPXNiC237uc3Sdv2m9OR0KMRPS20WVnD9Vrvu/yf9iKMRSuJltkrOMrQ/5udnO97Yy+Z+PsE6M+PeltO9E1P3cbOd7WyX+28eCdu6jjQ9As0ZD5yPWm4r+Oem2ueJc3wzM+du+h6r9N6rd99flbyvX/d/2PaS+n1nmH8tX/lTlJX9d//c9Dvlar+VZD0P7+d8k37+ruFDs33b9b1JW+VPrXQs7z3f93ZZV/px6XeSfl++/aayNZiL693/svX3bNv+8fP8vwvuSYh2ru4+87St/VblS5r83rn//kbd95S+Xq2XadWnrMbU3Vj/6v6vvSNf5x97jOaDf+U8GtOvS1mNqb6xBzF93337mb5Ofr/V/Vvlz9N7i/xxqPVnl70pp67HN33X/tpWr+cD2ueU9f+p84Gsc36r5+y5d6X/+fsb/7ZI/9fpBy18+b9Dyl8/bbvlzz/8HWCTCuw==
+  </data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="64" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzlmklvFDkYht2kCYpySwgzapK0m1UQ+ANIuYGAsAgBR5ZBYoQE0oTlyBw4BP4CaxLWC5tYTiCxL0KCCZeQCSAFGMGFA4wIB8T+WlVWuUzZZbtrScMrPXLcVa6q15+r/JVTM4uEzAAzDcrpIE4rCoRQzX4FbBtXxfa4NvxvuVS1idp3CVgaUXb5x1muuT7mX6XR+qAvo9QSs53p//Fe2VMf1OPa6GQSd51a6s3Ptasx6EuX7SqJbWzjHxVnuUxK/Y3VbU9bH+rC9fUWsR0rso2/KObfxPOzYhimngz7aldK40SOv0pR/rNUEveJKv4mytu/SvMV17Ld4BqnF8PoZOt/JKM+uoTzXDY8V1T8u4oBOo3V+FervwsBthpI+fln8sxbYBELlzwzT8U987Kcf5LWpgzznri8IEmNOsbEJJaux85Sg3Vh+HvhrAohs0EHmFP5sS5Klc+Z5nlxx5H1vEzIi3JyfSBL5zVpTSthLi/ZtaGUkApN4WIcNFJFvJmWwvsyyX9c+z8oIRtoUN/fSsiBVvtrT3s+zEo34P2mpX/Wr1cL0Vzzc4srfhmVb15xyD94PAcNc/i0n/9yjhgFk0m+bauKv0a0FcfdllOOk6f/TThed865XZ7+o9TbRkhfW/i3w23R+yahq4Uf61HE+Xed/+Xf78DrXdBRCrin8a/LA1jsOmkY3XugbgxkFX+mN/C7qhTwVuNfzAPWoVxPg22y905KtHL13zEhufyvpZ2QSeA3sLPk8Xu7en8xD+hD2R/jX+4DcR1xLMS/E17fwfOowHvL3DB0PKqPv+p+F3OAWhW/13kZdf/rnvkm+9X62lLW/m3zOd3+qvs77jknqpbjr/Nv2gdR1+/i33a+N5Vu/5eY91+VA6/8HTAP/3loGsWcRIM6fwe0vQeY1iDHWAvWOeaaSa//qOqiNlJC/qTBOOC5oIv/HvjeDfakmGsnLT72+DjguaCL/9PwfQacBa8N8o190lpwHvHn/vk44Lmgi/9B+H4EhkDTZLu2eYl552N/MyVkC3XzzvQZvr+Ar2Ceg/+k4q86rkp87J8Ep2jwO+8XU4nxryXxsS9LnhviJMZfVPfEcH2HVI9T2vEXJa4Bq/pFJbbm0t/mrbUcAcN1hDwGdxoIuQVuN3j7sfKvieFvy9jfjMd1YYYM1zhdFLXe7bIGzHUO753nwQVwEXyRrv1QEyG9oA/0g8NNwTb2P88y5gwKKmAKmOrPIdU+B1T7VeM1SqJ/9q2cnNuN4FzPwHPwAvwnnXsh/C4Ci0EXWFLFO3seGm731pmeoHza7v1vU/R/H/F+AP4BA+BhU7h9N/xuBdvAdrCj5H2fkXQ+kJrK3lrbaj9u3H9vM8Y8+Ai/n8BncBT1Y83h5nvRbh/YDw6AgzUW/5WlwD8b/wM+vb7PWShngw4wB8wFx8GJZu+bj2todx3cADfBrZTv/7QlP/90yvt70DRk41+nXyH+P6OmFIP85V8pr3li0TfVxj2v+L/018Abx+E9QloH/5bD2PgOj9V/4A==
+  </data>
+ </layer>
+ <layer id="4" name="Above Player" width="64" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmstugkAYhX8bQyKsJGxZ+lbWvkQXXXSp3Vnbl7AXq4/SF+jFvbrrC3g2xmohBTLD3M6XnADJAP/MRxgCiDTnKjquv0fl7QhRwW1iuoIjP4av92kqco/MkAfkMTVbDyGE/MdHX+QT+UK+kXX/bxve2/ykaP7exCJbZBe3U0OnK3LRbedcVehhTGIkMfRscxgP1UvbsLUu09T15qp/Ugz9h01dX/TvBtOKDs59+Tbf21qfLZT5V3U8Yjf0Hzaqfbni35U6daN6nuS4ukVT/64+D5JTdPk/LIe5yCUyyqvt5xtj9HuC3OWmKylGt/839HuJrAL1bzu6/f/GxfcIvqPbf9t+eR3VQ9f7f1X+r7PT7ZusuF1ZnT4yUNgvXd9/eX93A/oPm9D821KHLYTi3/T5mzJPRZ6QZ+QFeUUWCv+H3AM90iSu
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" id="6" name="Collisions">
+  <properties>
+   <property name="Collision" value=""/>
+  </properties>
+  <object id="1" type="collision" x="192" y="208" width="160" height="128"/>
+  <object id="206" type="collision" x="320" y="368" width="32" height="160"/>
+  <object id="207" type="collision" x="0" y="224" width="32" height="448"/>
+  <object id="208" type="collision" x="32" y="464" width="32" height="336"/>
+  <object id="209" type="collision" x="64" y="336" width="32" height="96"/>
+  <object id="215" type="collision" x="64" y="240" width="32" height="48"/>
+  <object id="216" type="collision" x="96" y="368" width="32" height="48"/>
+  <object id="217" type="collision" x="96" y="576" width="32" height="48"/>
+  <object id="219" type="collision" x="224" y="496" width="96" height="48"/>
+  <object id="218" type="collision" x="80" y="496" width="32" height="48"/>
+  <object id="211" type="collision" x="32" y="208" width="32" height="96"/>
+  <object id="210" type="collision" x="64" y="336" width="224" height="32"/>
+  <object id="2" type="collision" x="224" y="528" width="352" height="96"/>
+  <object id="212" type="collision" x="0" y="688" width="192" height="112"/>
+  <object id="213" type="collision" x="112" y="544" width="64" height="32"/>
+  <object id="3" type="collision" x="464" y="624" width="128" height="16"/>
+  <object id="4" type="collision" x="192" y="592" width="272" height="368"/>
+  <object id="6" type="collision" x="640" y="720" width="48" height="16"/>
+  <object id="8" type="collision" x="704" y="720" width="16" height="16"/>
+  <object id="9" type="collision" x="640" y="800" width="96" height="32"/>
+  <object id="12" type="collision" x="736" y="640" width="96" height="240"/>
+  <object id="13" type="collision" x="720" y="672" width="16" height="16"/>
+  <object id="14" type="collision" x="640" y="496" width="192" height="144"/>
+  <object id="15" type="collision" x="464" y="224" width="368" height="16"/>
+  <object id="16" type="collision" x="352" y="224" width="96" height="16"/>
+  <object id="17" type="collision" x="352" y="128" width="16" height="96"/>
+  <object id="18" type="collision" x="448" y="0" width="32" height="48"/>
+  <object id="19" type="collision" x="336" y="0" width="496" height="16"/>
+  <object id="22" type="collision" x="512" y="288" width="32" height="144"/>
+  <object id="23" type="collision" x="592" y="144" width="48" height="48"/>
+  <object id="24" type="collision" x="608" y="0" width="32" height="64"/>
+  <object id="25" type="collision" x="656" y="0" width="32" height="64"/>
+  <object id="26" type="collision" x="640" y="16" width="16" height="32"/>
+  <object id="27" type="collision" x="480" y="0" width="48" height="64"/>
+  <object id="28" type="collision" x="480" y="144" width="16" height="32"/>
+  <object id="29" type="collision" x="448" y="144" width="32" height="48"/>
+  <object id="30" type="collision" x="496" y="144" width="32" height="48"/>
+  <object id="31" type="collision" x="432" y="176" width="16" height="16"/>
+  <object id="32" type="collision" x="784" y="16" width="32" height="32"/>
+  <object id="37" type="collision" x="480" y="640" width="80" height="48"/>
+  <object id="38" type="collision" x="480" y="688" width="48" height="16"/>
+  <object id="39" type="collision" x="544" y="688" width="32" height="16"/>
+  <object id="41" type="collision" x="464" y="768" width="16" height="16"/>
+  <object id="43" type="collision" x="496" y="768" width="80" height="48"/>
+  <object id="44" type="collision" x="352" y="16" width="48" height="48"/>
+  <object id="45" type="collision" x="336" y="64" width="16" height="16"/>
+  <object id="46" type="collision" x="736" y="64" width="48" height="48"/>
+  <object id="47" type="collision" x="640" y="656" width="80" height="64"/>
+  <object id="48" type="collision" x="624" y="720" width="16" height="16"/>
+  <object id="50" type="collision" x="688" y="48" width="16" height="16"/>
+  <object id="53" type="collision" x="624" y="624" width="16" height="32"/>
+  <object id="63" type="collision" x="576" y="0" width="32" height="48"/>
+  <object id="64" type="collision" x="528" y="192" width="16" height="16"/>
+  <object id="105" type="collision" x="112" y="176" width="16" height="32"/>
+  <object id="106" type="collision" x="816" y="160" width="16" height="64"/>
+  <object id="113" type="collision" x="576" y="544" width="16" height="16"/>
+  <object id="153" type="collision" x="0" y="208" width="336" height="32"/>
+  <object id="161" type="collision" x="800" y="64" width="16" height="48"/>
+  <object id="162" type="collision" x="784" y="64" width="16" height="32"/>
+  <object id="164" type="collision" x="640" y="144" width="16" height="32"/>
+  <object id="165" type="collision" x="400" y="16" width="16" height="32"/>
+  <object id="166" type="collision" x="528" y="16" width="16" height="32"/>
+  <object id="167" type="collision" x="656" y="144" width="16" height="48"/>
+  <object id="168" type="collision" x="416" y="16" width="32" height="48"/>
+  <object id="169" type="collision" x="544" y="16" width="32" height="48"/>
+  <object id="173" type="collision" x="672" y="176" width="16" height="16"/>
+  <object id="174" type="collision" x="720" y="96" width="16" height="16"/>
+  <object id="181" type="collision" x="832" y="0" width="96" height="112"/>
+  <object id="182" type="collision" x="864" y="336" width="64" height="64"/>
+  <object id="183" type="collision" x="800" y="288" width="32" height="48"/>
+  <object id="228" type="collision" x="832" y="128" width="16" height="16"/>
+  <object id="184" type="collision" x="640" y="352" width="192" height="80"/>
+  <object id="186" type="collision" x="832" y="624" width="32" height="160"/>
+  <object id="187" type="collision" x="864" y="656" width="32" height="64"/>
+  <object id="188" type="collision" x="992" y="0" width="32" height="336"/>
+  <object id="189" type="collision" x="992" y="432" width="32" height="384"/>
+  <object id="190" type="collision" x="800" y="464" width="32" height="128"/>
+  <object id="191" type="collision" x="960" y="176" width="32" height="128"/>
+  <object id="199" type="collision" x="640" y="240" width="128" height="64"/>
+  <object id="202" type="collision" x="704" y="320" width="96" height="16"/>
+  <object id="204" type="collision" x="640" y="320" width="48" height="16"/>
+  <object id="205" type="collision" x="640" y="288" width="32" height="48"/>
+  <object id="203" type="collision" x="656" y="240" width="176" height="32"/>
+  <object id="243" type="collision" x="848" y="304" width="32" height="16"/>
+  <object id="244" type="collision" x="832" y="288" width="16" height="16"/>
+  <object id="192" type="collision" x="928" y="208" width="32" height="64"/>
+  <object id="193" type="collision" x="928" y="496" width="32" height="96"/>
+  <object id="194" type="collision" x="960" y="752" width="32" height="64"/>
+  <object id="195" type="collision" x="928" y="784" width="32" height="64"/>
+  <object id="199" type="collision" x="352" y="352" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="7" name="Events">
+  <object id="67" name="Go to Player's house" type="event" x="688" y="720" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport player_house_downstairs.tmx,4,6,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="68" name="Play Music" type="init" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="act1" value="play_music music_08_overworld"/>
+    <property name="cond1" value="not music_playing music_08_overworld"/>
+   </properties>
+  </object>
+  <object id="69" name="Go to Test house" type="event" x="528" y="688" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport maple_house.tmx,6,10,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="70" name="Random Battle 1" type="event" x="512" y="432" width="128" height="80">
+   <properties>
+    <property name="act10" value="random_encounter new_txmn"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="71" name="Random Battle 2" type="event" x="352" y="432" width="96" height="80">
+   <properties>
+    <property name="act10" value="random_encounter vivi_route1"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="72" name="Random Battle 3" type="event" x="400" y="368" width="112" height="48">
+   <properties>
+    <property name="act10" value="random_encounter default_encounter"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="73" name="Random Battle 4" type="event" x="352" y="304" width="144" height="48">
+   <properties>
+    <property name="act10" value="random_encounter vivi_route1"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="200" name="Random Battle 4" type="event" x="208" y="368" width="96" height="80">
+   <properties>
+    <property name="act10" value="random_encounter vivi_route1,20"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="201" name="Random Battle 4" type="event" x="80" y="464" width="128" height="128">
+   <properties>
+    <property name="act10" value="random_encounter vivi_route1"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="74" name="Random Battle 5" type="event" x="208" y="80" width="64" height="80">
+   <properties>
+    <property name="act10" value="random_encounter default_encounter"/>
+    <property name="act20" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond30" value="is variable_set badge:yes"/>
+   </properties>
+  </object>
+  <object id="76" name="Empty Grass 2" type="event" x="16" y="80" width="32" height="16">
+   <properties>
+    <property name="act10" value="play_map_animation grass,0.1,noloop,player"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="78" name="Player's House Sign" type="event" x="624" y="720" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_town_homeplace"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="79" name="Professor's House Sign" type="event" x="560" y="688" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_town_sign_profhouse"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="80" name="Teleport to Route 1" type="event" x="96" y="176" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport route1.tmx,50,11"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,left"/>
+   </properties>
+  </object>
+  <object id="81" name="Teleport to Route 1" type="event" x="96" y="192" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport route1.tmx,50,12"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,left"/>
+   </properties>
+  </object>
+  <object id="98" name="Teleport to healing center" type="event" x="640" y="48" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport vivi_healing_center.tmx,6,10,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="108" name="Enter mart" type="event" x="480" y="176" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport vivi_mart1.tmx,6,10,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="124" name="Tuxemart Sign" type="event" x="528" y="192" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_town_sign_tuxemart"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="110" name="Tuxecenter Sign" type="event" x="688" y="48" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_town_sign_tuxecenter"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="112" name="Startup Town Sign" type="event" x="624" y="640" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_town_sign"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="115" name="Route 0 Sign" type="event" x="576" y="544" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog vivi_scores"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="127" name="bring the cavalry" type="event" x="560" y="736" width="16" height="16">
+   <properties>
+    <property name="act30" value="create_npc knight4,37,39,stand"/>
+    <property name="act40" value="create_npc knight3,38,39,stand"/>
+    <property name="act90" value="set_variable goodbyeoldknight:badguys"/>
+    <property name="cond10" value="is not variable_set goodbyeoldknight"/>
+   </properties>
+  </object>
+  <object id="124" name="bringthecavalry2" type="event" x="656" y="432" width="16" height="64">
+   <properties>
+    <property name="act1" value="pathfind knight4,42,29"/>
+    <property name="act2" value="translated_dialog vivi_invadingsoldier1"/>
+    <property name="act3" value="add_monster agnite,4,knight4"/>
+    <property name="act4" value="add_monster nut,4,knight4,3,3"/>
+    <property name="act5" value="variable_math fight_count,+,1"/>
+    <property name="act9" value="start_battle player,knight4"/>
+    <property name="act98" value="remove_npc knight4"/>
+    <property name="act99" value="set_variable goodbyeoldknight:hedead"/>
+    <property name="cond10" value="not variable_set goodbyeoldknight:hedead"/>
+    <property name="cond2" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="245" name="bringthecavalry2" type="event" x="768" y="432" width="16" height="64">
+   <properties>
+    <property name="act1" value="pathfind_to_player knight4"/>
+    <property name="act2" value="translated_dialog vivi_invadingsoldier1"/>
+    <property name="act3" value="add_monster agnite,4,knight4"/>
+    <property name="act4" value="add_monster nut,4,knight4,3,3"/>
+    <property name="act5" value="variable_math fight_count,+,1"/>
+    <property name="act9" value="start_battle player,knight4"/>
+    <property name="act98" value="remove_npc knight4"/>
+    <property name="act99" value="set_variable goodbyeoldknight:hedead"/>
+    <property name="cond10" value="not variable_set goodbyeoldknight:hedead"/>
+    <property name="cond2" value="is char_moved player"/>
+    <property name="cond20" value="is char_at player"/>
+   </properties>
+  </object>
+  <object id="126" name="timetowalk" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act010" value="translated_dialog cometomepls"/>
+    <property name="act020" value="set_variable talkpls:yes"/>
+    <property name="act030" value="char_stop player"/>
+    <property name="act035" value="lock_controls"/>
+    <property name="act040" value="pathfind player,37,47"/>
+    <property name="act050" value="char_face player,up"/>
+    <property name="act060" value="unlock_controls"/>
+    <property name="act070" value="create_npc npc_wife,33,44"/>
+    <property name="act080" value="pathfind npc_wife,36,47"/>
+    <property name="act090" value="char_face npc_wife,up"/>
+    <property name="act100" value="set_variable goodbyeoldknight:helpme"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:heback"/>
+   </properties>
+  </object>
+  <object id="127" name="timetowalk2" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act10" value="pathfind npc_mom,38,47"/>
+    <property name="act20" value="char_face npc_mom,up"/>
+    <property name="act30" value="set_variable talkpls:gone"/>
+    <property name="cond10" value="is variable_set talkpls:yes"/>
+   </properties>
+  </object>
+  <object id="128" name="listentime" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act010" value="wait 0.6"/>
+    <property name="act020" value="translated_dialog hellolovelypeople2"/>
+    <property name="act030" value="char_face allie,left"/>
+    <property name="act040" value="wait 0.5"/>
+    <property name="act050" value="char_face allie,right"/>
+    <property name="act060" value="wait 0.5"/>
+    <property name="act070" value="char_face allie,down"/>
+    <property name="act080" value="wait 0.3"/>
+    <property name="act090" value="translated_dialog hellolovelypeople3"/>
+    <property name="act100" value="translated_dialog hellolovelypeople4"/>
+    <property name="act110" value="char_face allie,right"/>
+    <property name="act120" value="wait 0.3"/>
+    <property name="act130" value="char_face allie,left"/>
+    <property name="act140" value="wait 0.3"/>
+    <property name="act150" value="char_face allie,down"/>
+    <property name="act160" value="translated_dialog hellolovelypeople5"/>
+    <property name="act170" value="set_variable goodbyeoldknight:ohwell"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:helpme"/>
+   </properties>
+  </object>
+  <object id="129" name="listentime2" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act010" value="char_face allie,up"/>
+    <property name="act020" value="translated_dialog whereismyhairbrush"/>
+    <property name="act030" value="pathfind knight3,43,46"/>
+    <property name="act040" value="char_face knight3,up"/>
+    <property name="act050" value="char_face allie,right"/>
+    <property name="act060" value="remove_npc knight3"/>
+    <property name="act070" value="wait 0.3"/>
+    <property name="act080" value="char_face allie,up"/>
+    <property name="act090" value="translated_dialog darnitjohn3"/>
+    <property name="act100" value="translated_dialog darnitjohn4"/>
+    <property name="act110" value="translated_dialog darnitjohn5"/>
+    <property name="act120" value="translated_dialog darnitjohn6"/>
+    <property name="act130" value="char_face knight4,right"/>
+    <property name="act140" value="wait 0.1"/>
+    <property name="act150" value="char_face knight4,left"/>
+    <property name="act160" value="wait 0.1"/>
+    <property name="act170" value="char_face knight4,down"/>
+    <property name="act180" value="translated_dialog darnitjohn7"/>
+    <property name="act190" value="char_face allie,down"/>
+    <property name="act200" value="wait 0.6"/>
+    <property name="act210" value="translated_dialog darnitjohn8"/>
+    <property name="act220" value="char_speed allie,10"/>
+    <property name="act230" value="pathfind allie,38,43"/>
+    <property name="act240" value="char_face allie,left"/>
+    <property name="act250" value="char_face knight4,right"/>
+    <property name="act260" value="translated_dialog darnitjohn9"/>
+    <property name="act270" value="wait 0.5"/>
+    <property name="act280" value="translated_dialog darnitjohn10"/>
+    <property name="act290" value="char_speed knight4,8"/>
+    <property name="act300" value="pathfind knight4,33,44"/>
+    <property name="act310" value="char_face knight4,up"/>
+    <property name="act320" value="remove_npc knight4"/>
+    <property name="act330" value="set_variable goodbyeoldknight:mamamia"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:ohwell"/>
+   </properties>
+  </object>
+  <object id="130" name="listentime3" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act010" value="pathfind allie,37,45"/>
+    <property name="act020" value="char_face allie,down"/>
+    <property name="act030" value="translated_dialog oopsie"/>
+    <property name="act040" value="pathfind npc_mom,38,46"/>
+    <property name="act050" value="translated_dialog ourstuffisours"/>
+    <property name="act060" value="char_face allie,right"/>
+    <property name="act070" value="translated_dialog oopsie2"/>
+    <property name="act080" value="pathfind npc_mom,38,47"/>
+    <property name="act090" value="char_face npc_mom,up"/>
+    <property name="act100" value="create_npc knight3,43,46"/>
+    <property name="act110" value="char_face knight3,left"/>
+    <property name="act120" value="translated_dialog maamiexist"/>
+    <property name="act130" value="translated_dialog maamiexist2"/>
+    <property name="act140" value="char_face knight3,up"/>
+    <property name="act150" value="wait 0.4"/>
+    <property name="act160" value="char_face knight3,left"/>
+    <property name="act170" value="translated_dialog maamiexist3"/>
+    <property name="act180" value="translated_dialog maamiexist4"/>
+    <property name="act190" value="translated_dialog yesmaam"/>
+    <property name="act200" value="pathfind knight3,44,53"/>
+    <property name="act210" value="char_face knight3,up"/>
+    <property name="act220" value="remove_npc knight3"/>
+    <property name="act230" value="char_face allie,down"/>
+    <property name="act240" value="set_variable goodbyeoldknight:herewegoagain"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:mamamia"/>
+   </properties>
+  </object>
+  <object id="125" name="listentime4" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog itsmyaurababe"/>
+    <property name="act20" value="char_speed allie,1.5"/>
+    <property name="act30" value="pathfind allie,37,46"/>
+    <property name="act40" value="translated_dialog itsmyaurababe2"/>
+    <property name="act49" value="play_sound sound_confirm"/>
+    <property name="act50" value="add_item allies_address"/>
+    <property name="act60" value="translated_dialog itsmyduhduhduh"/>
+    <property name="act70" value="translated_dialog itsmyaurababe3"/>
+    <property name="act80" value="set_variable goodbyeoldknight:mama"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:herewegoagain"/>
+   </properties>
+  </object>
+  <object id="126" name="listentime5" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act010" value="create_npc knight4,33,44"/>
+    <property name="act020" value="char_face knight4,right"/>
+    <property name="act030" value="translated_dialog maamnothing"/>
+    <property name="act040" value="char_face allie,left"/>
+    <property name="act050" value="translated_dialog maamnothing2"/>
+    <property name="act060" value="translated_dialog maamnothing3"/>
+    <property name="act070" value="translated_dialog maamnothing4"/>
+    <property name="act080" value="create_npc knight3,38,53"/>
+    <property name="act090" value="pathfind knight3,39,46"/>
+    <property name="act100" value="char_face knight3,left"/>
+    <property name="act110" value="char_face allie,right"/>
+    <property name="act120" value="translated_dialog maamnothing5"/>
+    <property name="act130" value="char_face allie,left"/>
+    <property name="act140" value="wait 0.4"/>
+    <property name="act150" value="char_face allie,right"/>
+    <property name="act160" value="translated_dialog maamnothing6"/>
+    <property name="act170" value="char_speed allie,3"/>
+    <property name="act180" value="char_face allie,down"/>
+    <property name="act190" value="wait 1"/>
+    <property name="act200" value="translated_dialog seeme"/>
+    <property name="act210" value="pathfind allie,37,44"/>
+    <property name="act220" value="pathfind knight3,38,44"/>
+    <property name="act230" value="char_face allie,left"/>
+    <property name="act240" value="translated_dialog solongjohn"/>
+    <property name="act250" value="pathfind allie,37,40"/>
+    <property name="act260" value="translated_dialog solongjohn2"/>
+    <property name="act270" value="char_face knight3,up"/>
+    <property name="act280" value="translated_dialog yesmaam"/>
+    <property name="act290" value="pathfind knight3,38,40"/>
+    <property name="act300" value="remove_npc knight3"/>
+    <property name="act310" value="remove_npc allie"/>
+    <property name="act320" value="set_variable goodbyeoldknight:howcaniresistyou"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:mama"/>
+   </properties>
+  </object>
+  <object id="127" name="listentime6" type="event" x="736" y="752" width="16" height="16">
+   <properties>
+    <property name="act020" value="char_face knight4,down"/>
+    <property name="act160" value="remove_npc knight4"/>
+    <property name="act170" value="set_variable goodbyeoldknight:finallydone"/>
+    <property name="act180" value="unlock_controls"/>
+    <property name="cond10" value="is variable_set goodbyeoldknight:howcaniresistyou"/>
+   </properties>
+  </object>
+  <object id="129" name="nuuujohnisgone" type="event" x="720" y="464" width="16" height="16">
+   <properties>
+    <property name="act10" value="create_npc knight4,45,29"/>
+    <property name="act20" value="char_face knight4,left"/>
+    <property name="cond10" value="not char_exists knight4"/>
+    <property name="cond20" value="not variable_set goodbyeoldknight"/>
+   </properties>
+  </object>
+  <object id="150" name="create traveler" type="event" x="464" y="464" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc spyder_dryadsgrove_boy,28,29"/>
+    <property name="act2" value="char_face spyder_dryadsgrove_boy,right"/>
+    <property name="cond1" value="not char_exists spyder_dryadsgrove_boy"/>
+   </properties>
+  </object>
+  <object id="136" name="why hello there" type="event" x="480" y="464" width="16" height="16">
+   <properties>
+    <property name="act2" value="translated_dialog vivi_kid"/>
+    <property name="act4" value="set_variable fight_inc:1"/>
+    <property name="act5" value="variable_math fight_count,+,1"/>
+    <property name="act6" value="char_face spyder_dryadsgrove_boy,down"/>
+    <property name="act7" value="random_battle 1,2,8"/>
+    <property name="behav1" value="talk spyder_dryadsgrove_boy"/>
+   </properties>
+  </object>
+  <object id="137" name="go, wander my children" type="event" x="704" y="0" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc bob,45,8,stand"/>
+    <property name="act2" value="char_wander bob,2.0"/>
+    <property name="cond1" value="not char_exists bob"/>
+   </properties>
+  </object>
+  <object id="138" name="talk to bob" type="event" x="720" y="32" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_veteran"/>
+    <property name="behav1" value="talk bob"/>
+   </properties>
+  </object>
+  <object id="233" name="talk" type="event" x="368" y="80" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog priestoftheholysavepoint"/>
+    <property name="act2" value="set_variable penguin_fought:yes"/>
+    <property name="act3" value="add_monster tadcool,3,penguin"/>
+    <property name="act4" value="add_monster babysnitch,3,penguin,3,3"/>
+    <property name="act5" value="variable_math fight_count,+,1"/>
+    <property name="act6" value="clear_variable watcherfought"/>
+    <property name="act7" value="start_battle player,penguin,music_13_danger"/>
+    <property name="act8" value="translated_dialog penguinpriest"/>
+    <property name="behav1" value="talk penguin"/>
+    <property name="cond1" value="not variable_set penguin_fought"/>
+   </properties>
+  </object>
+  <object id="234" name="talk" type="event" x="368" y="128" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_watch"/>
+    <property name="act5" value="variable_math fight_count,+,1"/>
+    <property name="act6" value="clear_variable penguin_fought"/>
+    <property name="act7" value="set_variable watcherfought:yes"/>
+    <property name="act9" value="random_battle 2,3,10"/>
+    <property name="behav1" value="talk conworker3"/>
+    <property name="cond1" value="not variable_set watcherfought"/>
+   </properties>
+  </object>
+  <object id="246" name="talk" type="event" x="400" y="112" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_fight"/>
+    <property name="act6" value="clear_variable penguin_fought"/>
+    <property name="act7" value="clear_variable watcherfought"/>
+    <property name="behav1" value="talk conworker3"/>
+    <property name="cond1" value="is variable_set watcherfought"/>
+   </properties>
+  </object>
+  <object id="248" name="talk" type="event" x="416" y="80" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog penguinpriest"/>
+    <property name="act6" value="clear_variable penguin_fought"/>
+    <property name="act7" value="clear_variable watcherfought"/>
+    <property name="behav1" value="talk penguin"/>
+    <property name="cond1" value="is variable_set penguin_fought"/>
+   </properties>
+  </object>
+  <object id="139" name="npc blockers" type="event" x="336" y="16" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc penguin,21,5,stand"/>
+    <property name="act3" value="create_npc conworker3,21,7,stand"/>
+    <property name="act4" value="char_face penguin,left"/>
+    <property name="act6" value="char_face conworker3,left"/>
+    <property name="cond1" value="not variable_set announcetwo:done"/>
+    <property name="cond2" value="not char_exists penguin"/>
+    <property name="cond4" value="not char_exists conworker3"/>
+   </properties>
+  </object>
+  <object id="146" name="add jaime" type="event" x="448" y="144" width="16" height="16">
+   <properties>
+    <property name="act10" value="create_npc taba_greeter,31,12,stand"/>
+    <property name="act20" value="char_face taba_greeter,down"/>
+    <property name="cond10" value="not char_exists taba_greeter"/>
+   </properties>
+  </object>
+  <object id="133" name="greeter_greets" type="event" x="480" y="192" width="16" height="16">
+   <properties>
+    <property name="act05" value="set_variable greeter_greets:yes"/>
+    <property name="act10" value="char_face taba_greeter,left"/>
+    <property name="act20" value="translated_dialog taba_greeting1"/>
+    <property name="act25" value="translated_dialog taba_greeting2a"/>
+    <property name="act30" value="add_item tuxeball,2"/>
+    <property name="act40" value="translated_dialog vivi_gotit"/>
+    <property name="act60" value="char_face taba_greeter,down"/>
+    <property name="cond10" value="not has_item player,tuxeball"/>
+    <property name="cond20" value="is party_size player,greater_than,0"/>
+    <property name="cond30" value="is char_at player"/>
+    <property name="cond40" value="not variable_set greeter_greets:yes"/>
+   </properties>
+  </object>
+  <object id="134" name="greeter_greets2" type="event" x="480" y="192" width="16" height="16">
+   <properties>
+    <property name="act05" value="set_variable greeter_greets:yes"/>
+    <property name="act10" value="char_face taba_greeter,left"/>
+    <property name="act20" value="translated_dialog taba_greeting1"/>
+    <property name="act30" value="translated_dialog taba_greeting2b"/>
+    <property name="act60" value="char_face taba_greeter,down"/>
+    <property name="cond10" value="is has_item player,tuxeball"/>
+    <property name="cond20" value="is party_size player,greater_than,0"/>
+    <property name="cond30" value="is char_at player"/>
+    <property name="cond40" value="not variable_set greeter_greets:yes"/>
+   </properties>
+  </object>
+  <object id="150" name="jaime3" type="event" x="448" y="176" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_greeting3"/>
+    <property name="act20" value="char_face taba_greeter,down"/>
+    <property name="behav10" value="talk taba_greeter"/>
+    <property name="cond10" value="is variable_set greeter_greets:yes"/>
+   </properties>
+  </object>
+  <object id="135" name="secret_tuxeball" type="event" x="672" y="336" width="16" height="16">
+   <properties>
+    <property name="act10" value="set_variable secret_ball:found"/>
+    <property name="act20" value="add_item tuxeball,5"/>
+    <property name="act25" value="translated_dialog gotfivetuxeballs"/>
+    <property name="cond1" value="is char_facing player,left"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond30" value="not variable_set secret_ball:found"/>
+    <property name="cond40" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="230" name="imbrickcile riposte is broken" type="event" x="864" y="64" width="16" height="16">
+   <properties>
+    <property name="act10" value="set_variable secret_rocky:found"/>
+    <property name="act20" value="add_monster imbrickcile,5"/>
+    <property name="act25" value="translated_dialog vivi_hidemon"/>
+    <property name="act26" value="change_state JournalInfoState,imbrickcile"/>
+    <property name="cond1" value="is char_facing player,up"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond30" value="not variable_set secret_rocky:found"/>
+    <property name="cond40" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="232" name="secret_rocky" type="event" x="816" y="128" width="16" height="16">
+   <properties>
+    <property name="act10" value="set_variable secret_rocky:found"/>
+    <property name="act20" value="add_monster boxorox,5"/>
+    <property name="act25" value="translated_dialog vivi_hidemon"/>
+    <property name="act26" value="change_state JournalInfoState,boxorox"/>
+    <property name="cond1" value="is char_facing player,right"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond30" value="not variable_set secret_rocky:found"/>
+    <property name="cond40" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="231" name="secret_rocky" type="event" x="848" y="128" width="16" height="16">
+   <properties>
+    <property name="act10" value="set_variable secret_rocky:found"/>
+    <property name="act20" value="add_monster grintot,5"/>
+    <property name="act25" value="translated_dialog vivi_hidemon"/>
+    <property name="act26" value="change_state JournalInfoState,grintot"/>
+    <property name="cond1" value="is char_facing player,left"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond30" value="not variable_set secret_rocky:found"/>
+    <property name="cond40" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="157" name="propeller cat" type="event" x="80" y="272" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter propellercat,5"/>
+    <property name="act3" value="set_variable metcat:true"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metcat:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metcat:true"/>
+   </properties>
+  </object>
+  <object id="223" name="mushroom" type="event" x="272" y="0" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter cowpignon,5"/>
+    <property name="act3" value="set_variable metshroom:true"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metshroom:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metshroom:true"/>
+   </properties>
+  </object>
+  <object id="225" name="if not met mushroom" type="event" x="608" y="368" width="32" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter dandicub,5"/>
+    <property name="act3" value="set_variable metshroom:flower"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metshroom:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metshroom:true"/>
+   </properties>
+  </object>
+  <object id="235" name="if not met dolfin" type="event" x="896" y="256" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter dollfin,8"/>
+    <property name="act3" value="set_variable metdollfin:true"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metdollfin:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metdollfin:true"/>
+   </properties>
+  </object>
+  <object id="241" name="if not met dolfin" type="event" x="912" y="112" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter flisces,8"/>
+    <property name="act3" value="set_variable metdollfin:fish"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metdollfin:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metdollfin:fish"/>
+   </properties>
+  </object>
+  <object id="237" name="if not met dolfin" type="event" x="880" y="256" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter eskipup,8"/>
+    <property name="act3" value="set_variable metdollfin:pup"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metdollfin:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metdollfin:true"/>
+    <property name="cond24" value="not variable_set metdollfin:pup"/>
+   </properties>
+  </object>
+  <object id="239" name="if not met dolfin" type="event" x="864" y="272" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_joinermon"/>
+    <property name="act2" value="wild_encounter tadcool,8"/>
+    <property name="act3" value="set_variable metdollfin:frog"/>
+    <property name="cond10" value="is char_moved player"/>
+    <property name="cond12" value="not variable_set metdollfin:joined"/>
+    <property name="cond20" value="is char_at player"/>
+    <property name="cond23" value="not variable_set metdollfin:frog"/>
+    <property name="cond24" value="not variable_set metdollfin:pup"/>
+   </properties>
+  </object>
+  <object id="221" name="propeller cat join" type="event" x="48" y="400" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster propellercat,5"/>
+    <property name="act12" value="set_variable metcat:joined"/>
+    <property name="cond12" value="is variable_set metcat:true"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metcat:joined"/>
+   </properties>
+  </object>
+  <object id="236" name="dollfin join" type="event" x="816" y="368" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster dollfin,8"/>
+    <property name="act12" value="set_variable metdollfin:joined"/>
+    <property name="cond12" value="is variable_set metdollfin:true"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metdollfin:joined"/>
+   </properties>
+  </object>
+  <object id="238" name="eskipup join" type="event" x="768" y="368" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster eskipup,8"/>
+    <property name="act12" value="set_variable metdollfin:joined"/>
+    <property name="cond12" value="is variable_set metdollfin:pup"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metdollfin:joined"/>
+   </properties>
+  </object>
+  <object id="242" name="eskipup join" type="event" x="784" y="368" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster flisces,8"/>
+    <property name="act12" value="set_variable metdollfin:joined"/>
+    <property name="cond12" value="is variable_set metdollfin:fish"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metdollfin:joined"/>
+   </properties>
+  </object>
+  <object id="240" name="eskipup join" type="event" x="736" y="368" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster tadcool,8"/>
+    <property name="act12" value="set_variable metdollfin:joined"/>
+    <property name="cond12" value="is variable_set metdollfin:frog"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metdollfin:joined"/>
+   </properties>
+  </object>
+  <object id="224" name="get monster" type="event" x="160" y="96" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster cowpignon,5"/>
+    <property name="act12" value="set_variable metshroom:joined"/>
+    <property name="cond12" value="is variable_set metshroom:true"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metshroom:joined"/>
+   </properties>
+  </object>
+  <object id="226" name="get monster" type="event" x="176" y="64" width="16" height="64">
+   <properties>
+    <property name="act1" value="translated_dialog vivi_gotit"/>
+    <property name="act10" value="add_monster dandicub,5"/>
+    <property name="act12" value="set_variable metshroom:joined"/>
+    <property name="cond12" value="is variable_set metshroom:flower"/>
+    <property name="cond14" value="not char_defeated player"/>
+    <property name="cond20" value="not variable_set metshroom:joined"/>
+   </properties>
+  </object>
+  <object id="160" name="Default" type="event" x="16" y="0" width="16" height="16">
+   <properties>
+    <property name="act1" value="set_variable teleport_faint:healing_center.tmx 6 7"/>
+    <property name="cond1" value="not variable_set teleport_faint"/>
+   </properties>
+  </object>
+  <object id="163" name="Teleport to house1" type="event" x="784" y="80" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport taba_house1.tmx,7,6,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="170" name="Teleport to house2" type="event" x="640" y="160" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport taba_house2.tmx,7,6,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="171" name="Teleport to house3" type="event" x="528" y="32" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport taba_house3.tmx,7,6,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="172" name="Teleport to house4" type="event" x="400" y="32" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport taba_house4.tmx,7,6,0.3"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="175" name="sign house2" type="event" x="672" y="176" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_house2_sign"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="176" name="sign house1" type="event" x="720" y="96" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_house1_sign"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="177" name="sign house3" type="event" x="560" y="48" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_house3_sign"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="178" name="sign house4" type="event" x="432" y="48" width="16" height="16">
+   <properties>
+    <property name="act10" value="translated_dialog taba_house4_sign"/>
+    <property name="cond10" value="is char_facing_tile player"/>
+    <property name="cond20" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="179" name="Environment Day" type="event" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="act1" value="set_variable environment:grass"/>
+    <property name="cond1" value="not variable_set stage_of_day:night"/>
+    <property name="cond2" value="not variable_set environment:grass"/>
+   </properties>
+  </object>
+  <object id="180" name="Environment Night" type="event" x="16" y="16" width="16" height="16">
+   <properties>
+    <property name="act1" value="set_variable environment:night_grass"/>
+    <property name="cond1" value="is variable_set stage_of_day:night"/>
+    <property name="cond2" value="not variable_set environment:night_grass"/>
+   </properties>
+  </object>
+  <object id="196" name="Teleport to Dryadsgrove" type="event" x="928" y="0" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport dryadsgrove.tmx,5,19"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="197" name="Teleport to Dryadsgrove" type="event" x="944" y="0" width="16" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport dryadsgrove.tmx,5,19"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,up"/>
+   </properties>
+  </object>
+  <object id="198" name="Teleport" type="event" x="592" y="608" width="32" height="16">
+   <properties>
+    <property name="act10" value="transition_teleport vivi_start_town.tmx,14,5"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,down"/>
+   </properties>
+  </object>
+  <object id="220" name="Teleport" type="event" x="896" y="672" width="16" height="32">
+   <properties>
+    <property name="act10" value="transition_teleport vivi_start_town.tmx,38,7"/>
+    <property name="cond10" value="is char_at player"/>
+    <property name="cond20" value="is char_facing player,left"/>
+   </properties>
+  </object>
+  <object id="222" name="Create cat" type="event" x="128" y="272" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc spyder_rockittenfrolicking,8,17"/>
+    <property name="act2" value="char_face spyder_rockittenfrolicking,left"/>
+    <property name="cond1" value="not char_exists spyder_rockittenfrolicking"/>
+    <property name="cond2" value="not variable_set metcat:joined"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

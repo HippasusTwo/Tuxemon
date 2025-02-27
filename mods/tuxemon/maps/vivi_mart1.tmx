@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="13" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="36">
+ <properties>
+  <property name="edges" value="clamped"/>
+  <property name="inside" type="bool" value="true"/>
+  <property name="map_type" value="shop"/>
+  <property name="scenario" value="vivi"/>
+  <property name="slug" value="candy_scoop"/>
+ </properties>
+ <tileset firstgid="1" source="../gfx/tilesets/core_city_and_country.tsx"/>
+ <tileset firstgid="1441" source="../gfx/tilesets/core_indoor_floors.tsx"/>
+ <tileset firstgid="5305" source="../gfx/tilesets/core_indoor_walls.tsx"/>
+ <tileset firstgid="9169" source="../gfx/tilesets/core_set pieces.tsx"/>
+ <layer id="1" name="Layer 1" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjkWRgYCERG5GBE8jAhlyjeDBjANZlI2Y=
+  </data>
+ </layer>
+ <layer id="2" name="Layer 2" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYICAIjUGhmI1BqwAl9xEoNgkHHrQ5eSh9C4VCL0KSK8G4jUquNnuUD03oXpOAulTQHxaBTebAU0PKYAUPdUqqHr8NSA4AEqDAIwN44uqMjDMBqoXV8VvdiJQTRIJbpEHqm0A4kYVCBsdmHMxMFhAsSUXQs98IF4A1dOhjqonFaguDYrTubDbCwAYESeT
+  </data>
+ </layer>
+ <layer id="3" name="Layer 3" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAv2KlCup6fw0zPcAEATJUFUg==
+  </data>
+ </layer>
+ <layer id="5" name="Above Player" width="13" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAveKlKuh4ONdL1zFMhXQ8MGGhAsCGUBgEYG8YHgRoVyuyhJvBWR7Az1XGroyYAALNcBs0=
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" id="4" name="Collisions">
+  <object id="10" type="collision" x="32" y="48" width="16" height="80"/>
+  <object id="11" type="collision" x="48" y="32" width="16" height="16"/>
+  <object id="14" type="collision" x="64" y="48" width="144" height="16"/>
+  <object id="18" type="collision" x="0" y="112" width="32" height="16"/>
+  <object id="32" type="collision" x="64" y="96" width="64" height="16"/>
+  <object id="33" type="collision" x="0" y="160" width="16" height="16"/>
+  <object id="34" type="collision" x="160" y="128" width="32" height="32"/>
+  <object id="35" type="collision" x="144" y="96" width="48" height="16"/>
+ </objectgroup>
+ <objectgroup color="#ffff00" id="6" name="Events">
+  <object id="13" name="Teleport to City" type="event" x="80" y="160" width="32" height="16">
+   <properties>
+    <property name="act1" value="transition_teleport vivi_grass.tmx,30,12,0.3"/>
+    <property name="act2" value="char_face player,down"/>
+    <property name="cond1" value="is char_at player"/>
+    <property name="cond2" value="is char_facing player,down"/>
+   </properties>
+  </object>
+  <object id="20" name="Create Shopkeeper" type="event" x="16" y="96" width="16" height="16">
+   <properties>
+    <property name="act1" value="create_npc spyder_candyscoop_clint,1,6"/>
+    <property name="act2" value="char_face spyder_candyscoop_clint,right"/>
+    <property name="act3" value="set_economy spyder_candyscoop_clint,vivi_mart1"/>
+    <property name="cond1" value="not char_exists spyder_candyscoop_clint"/>
+   </properties>
+  </object>
+  <object id="28" name="Route Music" type="event" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="act1" value="play_music music_01_opening"/>
+    <property name="cond1" value="not music_playing music_01_opening"/>
+   </properties>
+  </object>
+  <object id="29" name="Open Shop" type="event" x="32" y="96" width="16" height="16">
+   <properties>
+    <property name="act1" value="char_face spyder_candyscoop_clint,right"/>
+    <property name="act2" value="translated_dialog spyder_scoop_welcome"/>
+    <property name="act3" value="open_shop spyder_candyscoop_clint"/>
+    <property name="cond1" value="is char_facing_tile player"/>
+    <property name="cond2" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+  <object id="30" name="Open Shop" type="event" x="16" y="112" width="16" height="16">
+   <properties>
+    <property name="act1" value="char_face spyder_candyscoop_clint,down"/>
+    <property name="act2" value="translated_dialog spyder_scoop_welcome"/>
+    <property name="act3" value="open_shop spyder_candyscoop_clint"/>
+    <property name="cond1" value="is char_facing_tile player"/>
+    <property name="cond2" value="is button_pressed K_RETURN"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,7 +1,7 @@
 events:
   Scenario:
     actions:
-    - translated_dialog_choice spyder_campaign:xero_campaign,scenario_choice
+    - translated_dialog_choice spyder_campaign:xero_campaign:vivi_campaign,scenario_choice
     conditions:
     - not variable_set scenario_choice
     type: "event"
@@ -29,6 +29,27 @@ events:
     conditions:
     - is variable_set scenario_choice:xero_campaign
     - not variable_set xero_starting_money
+    - not variable_set gender_choice
+    type: "event"
+  Vivi:
+    actions:
+    - change_bg gradient_black,choice_gender,image
+    - translated_dialog_choice white_female:black_male:white_male:black_female:gender_enby:gender_whatever,race_choice
+    - change_bg bg_asudopt
+    - transition_teleport vivi_start.tmx,4,4,0.3
+    - set_money player,500
+    - set_variable fight_count:1
+    - set_variable loss_count:1
+    - set_variable loss_count:0
+    - set_variable fight_count:0
+    - set_variable fight_inc:1
+    - format_variable fight_count,int
+    - format_variable fight_inc,int
+    - format_variable loss_count,int
+    - set_variable vivi_starting_money:yes
+    conditions:
+    - is variable_set scenario_choice:vivi_campaign
+    - not variable_set vivi_starting_money
     - not variable_set gender_choice
     type: "event"
   White Male:

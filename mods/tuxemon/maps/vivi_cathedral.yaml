@@ -1,0 +1,69 @@
+events:
+  Use Computer:
+    actions:
+    - change_state PCState
+    conditions:
+    - is char_facing_tile player
+    - is button_pressed K_RETURN
+    x: 10
+    y: 3
+    type: "event"
+  Read Sign:
+    actions:
+    - translated_dialog vivi_nopay_cathedral
+    conditions:
+    - is char_facing_tile player
+    - is button_pressed K_RETURN
+    x: 1
+    y: 2
+    type: "event"
+  Talk Nurse:
+    actions:
+    - translated_dialog vivi_nopay_cathedral1
+    - translated_dialog_choice yes:no,billcathedral
+    conditions:
+    - is char_facing_tile player
+    - is button_pressed K_RETURN
+    - not variable_set chooses:yes
+    x: 5
+    y: 5
+    type: "event"
+  Heal Yes:
+    actions:
+    - translated_dialog vivi_nopay_cathedral2
+    - set_variable billcathedral:proceed
+    conditions:
+    - is variable_set billcathedral:yes
+    type: "event"
+  Heal No:
+    actions:
+    - set_variable billcathedral:null
+    conditions:
+    - is variable_set billcathedral:no
+    type: "event"
+  Heal No Cost Socialist:
+    actions:
+    - set_variable billcathedral:null
+    - set_monster_health
+    - set_monster_status
+    - char_face spyder_cathedral_nurse,up
+    - wait 1
+    - char_face spyder_cathedral_nurse,down
+    - translated_dialog vivi_heal
+    conditions:
+    - is variable_set billcathedral:proceed
+    type: "event"
+  Create Shady Guy:
+    actions:
+    - create_npc spyder_shady,11,9
+    - char_face spyder_shady,left
+    conditions:
+    - not char_exists spyder_shady
+    - is party_size player,greater_than,1
+    type: "event"
+  Talk Shady Guy:
+    actions:
+    - translated_dialog vivi_lawyer
+    behav:
+    - talk spyder_shady
+    type: "event"

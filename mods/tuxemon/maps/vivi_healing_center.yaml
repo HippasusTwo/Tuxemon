@@ -1,0 +1,50 @@
+events:
+  Route Music:
+    actions:
+    - play_music music_12_timeworn_pagoda
+    conditions:
+    - not music_playing music_12_timeworn_pagoda
+    type: "event"
+  Go Outside:
+    actions:
+    - transition_teleport vivi_grass.tmx,40,4,0.3
+    - char_face player,down
+    conditions:
+    - is char_at player
+    - is char_facing player,down
+    x: 6
+    y: 10
+    type: "event"
+  Create Nurse:
+    actions:
+    - create_npc spyder_cathedral_nurse,5,4
+    - load_yaml vivi_cathedral
+    conditions:
+    - not char_exists spyder_cathedral_nurse
+    type: "event"
+  Create Ada:
+    actions:
+    - create_npc spyder_cottoncenter_ada,10,7
+    conditions:
+    - not char_exists spyder_cottoncenter_ada
+    - is variable_set kernelquest:yes
+    type: "event"
+  Create NPC1:
+    actions:
+    - create_npc spyder_cottonhouse2_davis,8,8
+    - char_face spyder_cottonhouse2_davis,right
+    conditions:
+    - not char_exists spyder_cottonhouse2_davis
+    type: "event"
+  Talk NPC1:
+    actions:
+    - translated_dialog spyder_cottoncafe_lotus1
+    behav:
+    - talk spyder_cottoncafe_lotus
+    type: "event"
+  Talk Ada:
+    actions:
+    - translated_dialog spyder_cottoncenter_ada1
+    behav:
+    - talk spyder_cottoncenter_ada
+    type: "event"

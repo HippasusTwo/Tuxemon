@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "vivi_mart1",
+    "monsters": [],
+    "items": [
+      {
+        "name": "tea",
+        "price": 1500,
+        "cost": 20
+      },
+      {
+        "name": "miaow_milk",
+        "price": 2000,
+        "cost": 400
+      },
+      {
+        "name": "super_potion",
+        "price": 50,
+        "cost": 10
+      },
+      {
+        "name": "cureall",
+        "price": 250,
+        "cost": 50
+      },
+      {
+        "name": "tuxeball_noble",
+        "price": 1500,
+        "cost": 30
+      },
+      {
+        "name": "tuxeball_lavish",
+        "price": 2000,
+        "cost": 40
+      },
+      {
+        "name": "mega_potion",
+        "price": 200,
+        "cost": 50
+      },
+      {
+        "name": "tuxeball_majestic",
+        "price": 4000,
+        "cost": 80
+      },
+      {
+        "name": "tuxeball_diurnal",
+        "price": 3000,
+        "cost": 60,
+        "variables": [
+          "daytime:true"
+        ]
+      },
+      {
+        "name": "tuxeball_nocturnal",
+        "price": 3000,
+        "cost": 60,
+        "variables": [
+          "daytime:false"
+        ]
+      },
+      {
+        "name": "imperial_potion",
+        "price": 500,
+        "cost": 100
+      }
+    ]
+  },
+  {
+    "slug": "vivi_martmansion",
+    "monsters": [],
+    "items": [
+      {
+        "name": "tea",
+        "price": 500,
+        "cost": 20
+      },
+      {
+        "name": "ancient_tea",
+        "price": 5000,
+        "cost": 400
+      },
+      {
+        "name": "imperial_tea",
+        "price": 10000,
+        "cost": 400
+      },
+      {
+        "name": "super_potion",
+        "price": 500,
+        "cost": 10
+      },
+      {
+        "name": "mystery_tea",
+        "price": 2000,
+        "cost": 50
+      },
+      {
+        "name": "tm_avalanche",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "tm_blossom",
+        "price": 1000,
+        "cost": 200,
+        "inventory": 1
+      },
+      {
+        "name": "tm_frostbite",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "tm_supernova",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "imperial_potion",
+        "price": 1000,
+        "cost": 100
+      }
+    ]
+  },
+  {
+    "slug": "vivi_martnoballs",
+    "monsters": [],
+    "items": [
+      {
+        "name": "potion",
+        "price": 50,
+        "cost": 5,
+        "inventory": 10
+      },
+      {
+        "name": "peace_lily",
+        "price": 2000,
+        "cost": 400
+      },
+      {
+        "name": "pyramidion",
+        "price": 2000,
+        "cost": 400
+      },
+      {
+        "name": "ox_stick",
+        "price": 2000,
+        "cost": 400
+      },
+      {
+        "name": "cureall",
+        "price": 250,
+        "cost": 50
+      },
+      {
+        "name": "tm_avalanche",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "tm_blossom",
+        "price": 1000,
+        "cost": 200,
+        "inventory": 1
+      },
+      {
+        "name": "lucky_bamboo",
+        "price": 2000,
+        "cost": 400
+      },
+      {
+        "name": "tm_frostbite",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "tm_supernova",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "tm_vorpal",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      },
+      {
+        "name": "tm_cavity",
+        "price": 2000,
+        "cost": 400,
+        "inventory": 1
+      }
+    ]
+  }
+]

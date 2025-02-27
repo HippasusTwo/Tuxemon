@@ -3117,6 +3117,9 @@ msgstr "Tuxemon: Xero"
 msgid "spyder_campaign"
 msgstr "Tuxemon: Spyder and the Cathedral"
 
+msgid "vivi_campaign"
+msgstr "Tuxemon: Challenge Mode in Vivi"
+
 # Multiplayer notifications
 msgid "multiplayer_accept"
 msgstr "Accept"
@@ -12480,3 +12483,197 @@ msgstr "Town Hall"
 
 msgid "flower_lady"
 msgstr "Flower Lady"
+
+
+### Special Challenge Survival Mode Campaign, Constitutional Kingdom of Vivi ###
+
+msgid "vivi_town1"
+msgstr "Vivi Kingdom"
+
+msgid "gamelost"
+msgstr "You lost the game! Better luck next time."
+
+msgid "vivi_intro"
+msgstr "Welcome to The Democratic Kingdom of Vivi!\n"
+
+msgid "vivi_2"
+msgstr "This is a special campaign intended for players looking for a challenge.\n A full team wipe means game over in this mode. Monsters in this land have the legal right to leave a trainer if they become unhappy with them."
+
+msgid "vivi_intcont"
+msgstr "You do get free healing, and monsters have a chance of joining your team on their own if they are impressed!"
+
+msgid "vivi_4"
+msgstr "However, resources are scarce right now. Vivi has aggressive neighbors who want to 'free it', and if you lose a fight to their soldiers?"
+
+msgid "vivi_3"
+msgstr "They'll kill your team mates. \n Try to become this year's tournament king or queen to win, or stop the war."
+
+msgid "vivi_goodluck"
+msgstr "Good luck!"
+
+msgid "vivi_format1"
+msgstr "Randomized battles this way."
+
+msgid "vivi_format2"
+msgstr "Double battles not yet enabled."
+
+msgid "vivipere_fan"
+msgstr "I'm so excited! My parents got me a vivipere for this year's tourney, just like tradition.\n Are you getting one too from the nurse in the battle mansion?"
+
+msgid "vivipere_fan_no"
+msgstr "No? Wow, so you're just going out without a tuxemon? How brave! \n The ones in cities are pretty law abiding usually, but ones really far out into the wild might devour you!"
+
+msgid "vivipere_fan_yes"
+msgstr "My parents warned me even with a 'mon I should read signs to see if an area is too strong for me."
+
+msgid "vivi_sales"
+msgstr "I'm afraid there are no to few tuxeballs for sale what with the high tariffs.\n It's unfortunate - having your own pocket space to put a monster is darn useful. Here, I'll give you something if you beat me."
+
+msgid "vivi_choosemonster"
+msgstr "Would you like a monster?"
+
+msgid "vivi_scold"
+msgstr "Don't try to start a fight without a monster! This is the battle mansion."
+
+msgid "vivi_scold2"
+msgstr "Do you not see the skulls? Only fight me with a large, well trained team."
+
+msgid "vivi_nursesayshiding"
+msgstr "It likes to hide in boxes. \n I bought it an expensive toy and it ignored it in favor of the box!"
+
+msgid "vivi_warning"
+msgstr "You forgot to get a tuxemon. I can give you one."
+
+msgid "vivi_fight"
+msgstr "Let's fight over and over again! I'm randomized."
+
+msgid "vivi_rival"
+msgstr "With the invasion, it's dangerous. Let's have a practice fight - I won't kill your mon."
+
+msgid "vivi_rival2"
+msgstr "I'll heal your mon for you, but next time you might not be so lucky.\n You can see your score on the board over there for this run."
+
+msgid "vivi_rival3"
+msgstr "You won! See your score on the board over there. Many fights here are randomized."
+
+msgid "vivi_monleafy"
+msgstr "A plant tuxemon wandered into someone's garden. It detests plant eaters. Do you prefer meat?"
+
+msgid "vivi_monkitty"
+msgstr "It's a neighborhood stray, very friendly normally. \n It looks like it has been nibbling on the neighbor's herbs and getting into scraps with the conileaf over it. \n Give it pets and catnip to encourage it to join your party?"
+
+msgid "vivi_fire"
+msgstr "A bug is hiding in the flames! It loves eating plants and dislikes predators like cats. \n Offer it a warm dark place to hang out?"
+
+msgid "vivi_gotit"
+msgstr "Got it!"
+
+msgid "vivi_sales2"
+msgstr "I have no tuxeballs to sell you, but the next town might."
+
+msgid "vivi_grave"
+msgstr "Rest in peace, Champion."
+
+msgid "vivi_grave2"
+msgstr "Rest in peace, your old team, ${{var:deadpet}}"
+
+msgid "vivi_storytale"
+msgstr "Once upon a time, the world was gray and typeless, and our kingdom joyless. \n Then Vivipere began to evolve, or so they say. \n Every year, one would be chosen to prophecy the fate of the kingdom depending on how it evolved."
+
+###to put in 2nd or 3rd Vivi town
+
+msgid "vivi_heal"
+msgstr "All healed!"
+
+msgid "vivi_lawyer"
+msgstr "I'm a lawyer for tuxemon. They can approach me at any center if they're unhappy. \n Tuxemon vary in intelligence, from Cochini and Boxorox which are like toddlers, to legendaries and psychics smarter than most people. \n Don't assume they think exactly like humans. A wild tuxemon likes fighting and some may eat you if you lose to it!"
+
+msgid "vivi_nopay_cathedral"
+msgstr "No cost, thanks to our government!"
+
+msgid "vivi_nopay_cathedral1"
+msgstr "Would you like to heal up?"
+
+msgid "vivi_nopay_cathedral2"
+msgstr "It doesn't cost a thing!"
+
+msgid "vivi_joinermon"
+msgstr "A monster interested in joining your team has appeared to challenge you. Knock it out!"
+
+msgid "vivi_scores"
+msgstr "${{var:fight_count}} fights survived this run \n Overall losses ${{var:loss_count}}. Daytime: ${{var:daytime}}"
+
+msgid "vivi_hidemon"
+msgstr "There is a monster hiding there."
+
+msgid "vivi_nurse"
+msgstr "I'm sorry, we're full up on people who need healing. I can give you some potions."
+
+msgid "vivi_immigrate"
+msgstr "You might try immigrating somewhere safer, but a lot of places don't like refugees."
+
+msgid "vivi_watch"
+msgstr "Watch out, enemy soldiers were spotted."
+
+msgid "vivi_veteran"
+msgstr "Omnicorp hired mercenaries to try to kill our elected leader and put in a dictator."
+
+msgid "vivi_kid"
+msgstr "I'm scared... a bomb went off on top of my house. \n My mom told me to leave into the wilds and not come back for a year, it's safer."
+
+msgid "vivi_invadingsoldier1"
+msgstr "Die!"
+
+msgid "sortition_guy"
+msgstr "Our town runs on a sortition style democracy - and guess what!\n You just got selected for a leadership position! We need a tiebreaker in our council."
+
+msgid "voting"
+msgstr "The big Q. Do we put more funding in defense, offense or in healing?"
+
+msgid "offensevote"
+msgstr "Offense"
+
+msgid "defensevote"
+msgstr "Defense"
+
+msgid "healingvote"
+msgstr "Healing"
+
+msgid "offensewin"
+msgstr "Alright. We'll put in money for moves and other items."
+
+msgid "healingwin"
+msgstr "Alright. We'll fund a nurse."
+
+msgid "defensevotewin"
+msgstr "Alright, we'll fix up the box with a pocket dimension for storing extra tuxemon. \n Time is slowed down there, so it's useful in recruiting them to protect our town."
+
+msgid "sortitionguy_caravan1"
+msgstr "Our caravans shipping goods to us seem to have been delayed. Can you check it out?"
+
+msgid "sortitionguy_caravan2"
+msgstr "Fantastic! We just need one more shipment."
+
+msgid "sortitionguy_caravan3"
+msgstr "Fantastic! We should be able to repair everything now."
+
+msgid "sortitionguy_caravanlost"
+msgstr "It got lost? Damn..."
+
+msgid "caravanguy"
+msgstr "I'm wounded. Can I trust you to take this delivery of pure cash?"
+
+msgid "caravanchoiceselfish"
+msgstr "-Take it for yourself-"
+
+msgid "caravanchoicedeliver"
+msgstr "-Take it for delivery-"
+
+msgid "caravangal"
+msgstr "We can't make it through safely right now. \n If you could defeat the dangers, we could finish shipping to Random Town."
+
+msgid "priestoftheholysavepoint"
+msgstr "The church of the holy save point urges you to save your game, and your soul! \n In the name of the almighty Asudopt!"
+
+msgid "penguinpriest"
+msgstr "Dressing as a penguin is a way to show respect to Asudopt!"

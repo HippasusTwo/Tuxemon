@@ -1,0 +1,103 @@
+events:
+  Faint:
+    actions:
+    - translated_dialog gamelost
+    - wait 0.5
+    - copy_variable deadpet,mymonchoice
+    - transition_teleport vivi_start.tmx,4,4,0.3
+    - format_variable loss_count,int
+    - variable_math loss_count,+,fight_inc,loss_count
+    - set_variable safezone:true
+    conditions:
+    - is char_defeated player
+    - not location_name bedroom:vivi_start
+    - is current_state WorldState
+    - not variable_set safezone:true
+    type: "event"
+  Evolution all:
+    actions:
+    - evolution player
+    conditions:
+    - is check_evolution player
+    - is current_state WorldState
+    type: "event"
+  Set Party Status:
+    actions:
+    - set_party_status player
+    conditions:
+    - is current_state MainCombatMenuState:WorldMenuState
+    - is party_size player,greater_than,0
+    type: "event"
+  Check Max Moves:
+    actions:
+    - translated_dialog new_tech_delete
+    - get_monster_tech chosen_tech
+    - remove_tech chosen_tech
+    conditions:
+    - is check_max_tech
+    - is current_state MainCombatMenuState
+    type: "event"
+  Set Bonding Variable:
+    actions:
+    - set_variable steps_bonding:1000
+    conditions:
+    - not variable_set steps_bonding
+    - is party_size player,greater_than,0
+    type: "event"
+  Bond Up 1000 Steps:
+    actions:
+    - modify_monster_bond
+    - set_variable steps_bonding:1000
+    conditions:
+    - is variable_set steps_bonding
+    - is variable_is steps_bonding,equals,0.0
+    - is party_size player,greater_than,0
+    type: "event"
+  Bond Down -10 Fainted:
+    actions:
+    - modify_monster_bond combatstate_faint,-10
+    - clear_variable combatstate_faint
+    conditions:
+    - is variable_set combatstate_faint
+    - is party_size player,greater_than,0
+    type: "event"
+  Night Day Cycle Outside:
+    actions:
+    - set_layer 0:0:128:128
+    - variable_set stage_of_day:night
+    conditions:
+    - not variable_set flashback:on
+    - is variable_set daytime:false
+    - not location_inside
+    - not check_world layer,0:0:128:128
+    type: "event"
+  Dusk Day Cycle Outside:
+    actions:
+    - set_layer 0:0:68:68
+    - variable_set stage_of_day:night
+    conditions:
+    - not variable_set flashback:on
+    - is variable_set daytime:dusk
+    - not location_inside
+    - not check_world layer,0:0:68:68
+    type: "event"
+  Night Day Cycle Inside:
+    actions:
+    - set_layer
+    conditions:
+    - is variable_set stage_of_day:night
+    - not variable_set flashback:on
+    - is location_inside
+    - not check_world layer,255:255:255:0
+    type: "event"
+  Day Cycle Outside:
+    actions:
+    - set_layer
+    - variable_set stage_of_day:day
+    conditions:
+    - not variable_set daytime:false
+    - not variable_set daytime:dusk
+    - not variable_set flashback:on
+    - not location_inside
+    - is check_world layer,0:0:128:128
+    type: "event"

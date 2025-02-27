@@ -1,0 +1,136 @@
+events:
+  Music:
+    actions:
+    - play_music music_04_sanctuary
+    conditions:
+    - not music_playing music_04_sanctuary
+    - not music_playing music_20_game_over
+    x: 7
+    y: 0
+    type: "event"
+  Go Downstairs:
+    actions:
+    - transition_teleport vivi_start_town.tmx,11,6,0.3
+    - char_face player,down
+    conditions:
+    - is char_at player
+    x: 7
+    y: 2
+    type: "event"
+  Use Computer:
+    actions:
+    - change_state PCState
+    conditions:
+    - is char_facing_tile player
+    - is button_pressed K_RETURN
+    x: 3
+    y: 2
+    type: "event"
+  Resting in Bed:
+    actions:
+    - screen_transition 1
+    - wait 0.5
+    - translated_dialog xero_taba_restinbed
+    - set_monster_health
+    - set_monster_status
+    - set_variable teleport_faint:vivi_start.tmx 3 4
+    conditions:
+    - is button_pressed K_RETURN
+    - is char_facing_tile player
+    height: 2
+    width: 1
+    x: 0
+    y: 2
+    type: "event"
+  Faint:
+    actions:
+    - play_music music_20_game_over
+    - get_party_monster
+    - remove_monster iid_slot_0
+    - set_variable fight_count:0
+    - clear_variable metshroom
+    - clear_variable goodbyeoldknight
+    - clear_variable metdollfin
+    - clear_variable foughtsales
+    - clear_variable metcat
+    - clear_variable secret_rocky
+    - clear_variable rockittenchosen
+    - clear_variable lambertchosen
+    - clear_variable agnitechosen
+    - clear_variable tweesherchosen
+    - clear_variable nutchosen
+    - clear_variable viviperechosen
+    - clear_variable mymonchoice
+    - clear_variable firstfightdue
+    - set_variable safezone:false
+    conditions:
+    - is party_size player,greater_than,0
+    - is char_defeated player
+    type: "event"
+  Faint2:
+    actions:
+    - fadeout_music 2
+    - clear_variable char_defeated player
+    conditions:
+    - is party_size player,equals,0
+    - is char_defeated player
+    type: "event"
+  Intro:
+    actions:
+    - set_variable deadpet:Hippasus
+    - translated_dialog xero_skip_question
+    - translated_dialog_choice no:yes,question_skippy
+    - change_bg bg_asudopt_hippasus
+    conditions:
+    - not variable_set question_skippy:yes
+    - not variable_set question_skippy:no
+    x: 8
+    y: 0
+    type: "event"
+  Intro Yes:
+    actions:
+    - translated_dialog vivi_intro
+    - change_bg bg_asudopt_wingflap
+    - translated_dialog vivi_2
+    - change_bg bg_asudopt_hippasus
+    - translated_dialog vivi_intcont
+    - change_bg bg_asudopt_wingflap
+    - translated_dialog vivi_4
+    - change_bg bg_asudopt
+    - translated_dialog vivi_3
+    - change_bg bg_asudopt_sun
+    - wait 0.5
+    - change_bg bg_asudopt_headlow
+    - translated_dialog vivi_goodluck
+    - wait 0.3
+    - change_bg bg_asudopt_wingflap
+    - wait 0.3
+    - change_bg bg_asudopt_sun
+    - wait 0.3
+    - change_bg bg_asudopt
+    - wait 0.3
+    - change_bg bg_asudopt_hippasus
+    - wait 0.3
+    - change_bg bg_asudopt_wingflap
+    - wait 0.1
+    - rename_player random
+    - change_bg
+    - set_variable vivi_intro:done
+    conditions:
+    - is variable_set question_skippy:no
+    - not variable_set vivi_intro:done
+    x: 8
+    y: 1
+    type: "event"
+  Intro No:
+    actions:
+    - translated_dialog xero_intro_question
+    - rename_player random
+    - change_bg
+    - set_variable vivi_intro:done
+    conditions:
+    - is variable_set question_skippy:yes
+    - not variable_set vivi_intro:done
+    x: 9
+    y: 0
+    type: "event"
