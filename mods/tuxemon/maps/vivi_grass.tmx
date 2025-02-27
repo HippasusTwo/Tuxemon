@@ -290,7 +290,7 @@
   </object>
   <object id="124" name="bringthecavalry2" type="event" x="656" y="432" width="16" height="64">
    <properties>
-    <property name="act1" value="pathfind knight4,42,29"/>
+    <property name="act1" value="pathfind_to_player knight4"/>
     <property name="act2" value="translated_dialog vivi_invadingsoldier1"/>
     <property name="act3" value="add_monster agnite,4,knight4"/>
     <property name="act4" value="add_monster nut,4,knight4,3,3"/>
