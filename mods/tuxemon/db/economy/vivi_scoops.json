@@ -4,7 +4,7 @@
     "monsters": [],
     "items": [
       {
-        "name": "tea",
+        "name": "flintstone",
         "price": 1500,
         "cost": 20
       },
@@ -14,33 +14,33 @@
         "cost": 400
       },
       {
-        "name": "super_potion",
-        "price": 50,
+        "name": "tectonic_drill",
+        "price": 1500,
         "cost": 10
       },
       {
-        "name": "cureall",
-        "price": 250,
+        "name": "stovepipe",
+        "price": 500,
         "cost": 50
       },
       {
-        "name": "tuxeball_noble",
-        "price": 1500,
+        "name": "lima_pie",
+        "price": 500,
         "cost": 30
       },
       {
-        "name": "tuxeball_lavish",
-        "price": 2000,
+        "name": "thunderstone",
+        "price": 1000,
         "cost": 40
       },
       {
-        "name": "mega_potion",
+        "name": "sea_girdle",
         "price": 200,
         "cost": 50
       },
       {
-        "name": "tuxeball_majestic",
-        "price": 4000,
+        "name": "sweet_sand",
+        "price": 3000,
         "cost": 80
       },
       {
@@ -61,7 +61,7 @@
       },
       {
         "name": "imperial_potion",
-        "price": 500,
+        "price": 800,
         "cost": 100
       }
     ]
@@ -72,6 +72,11 @@
     "items": [
       {
         "name": "tea",
+        "price": 500,
+        "cost": 20
+      },
+      {
+        "name": "booster_tech",
         "price": 500,
         "cost": 20
       },

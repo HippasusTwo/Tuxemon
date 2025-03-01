@@ -27,7 +27,6 @@ events:
     - create_npc spyder_cottoncenter_ada,10,7
     conditions:
     - not char_exists spyder_cottoncenter_ada
-    - is variable_set kernelquest:yes
     type: "event"
   Create NPC1:
     actions:
@@ -44,7 +43,18 @@ events:
     type: "event"
   Talk Ada:
     actions:
-    - translated_dialog spyder_cottoncenter_ada1
+    - translated_dialog happy_guy_dialog
+    - translated_dialog_choice yes:no,renaming
     behav:
     - talk spyder_cottoncenter_ada
+    conditions:
+    - not variable_set renaming:yes
+    type: "event"
+  Talk Ada2:
+    actions:
+    - get_party_monster
+    - rename_monster iid_slot_0
+    - set_variable renaming:no
+    conditions:
+    - is variable_set renaming:yes
     type: "event"

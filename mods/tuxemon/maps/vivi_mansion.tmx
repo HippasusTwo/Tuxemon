@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="18" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="77">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="18" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="84">
  <properties>
   <property name="edges" value="clamped"/>
   <property name="inside" type="bool" value="true"/>
@@ -33,21 +33,21 @@
  </layer>
  <layer id="2" name="Tile Layer 2" width="18" height="18">
   <data encoding="base64" compression="zlib">
-   eAGlUssNAlEIpAO9+rnr2Ro0agH2YQnaiV148leDiS0YT7Ygc3gJjPPWz5KQ3YFhYFnM2tuj873GemUWHZWbidnWva0dRmYn92k3KzHO2YzA7Y3NBu5cxzhXZtSks6P5cmVG4DbNgz7sRSHGZw066KG86HCuNg/2f/zBn85Ve5777hfCL87ve/zsT84vxf+6+13GHeAdt4r5oYPeigNeNGDeAWJRp8ZhnYjxrnQUJ8ZQoyzOo/JcB3wdvjP/0WGVT9+1975qHtbB3uM8wNFuQoc54CNW7gq3UuO8AKdHSww=
+   eAGlUskNwkAMdAfw5fjDmxpAQAH0QQnQCV3w4qoBiRYQL1qI57GSd5jdALFkJWOPx45js+726n2vsd2YRUflbma2d+9qp4nZxX3ez5UY59kcgTuYmo3cuY5xXpmjmk7OrKNDyzzow54UY3xR0UEP5UmHc6X9YP/nH/ztXLXnpe9+Jfzm/KHHr/7k/Fr8r6ffZdwB3nGrmB866K044EUD5h0gFnVKHNaJGO9KR3FiDDXK4jwqz3XA9/En8x8dVmn7rqP3VfOwDvYe5wGO9hA6zAEfsXRXuJUSpwEr+Upc
   </data>
  </layer>
  <layer id="3" name="Tile Layer 3" width="18" height="18">
   <data encoding="base64" compression="zlib">
-   eAGNlD0vQ1EYxx8mk0qk2jQsfALvg5el1Ri8DBgwMNi8xEdQXaQ1i0XoXXwCwdYudiKSWlhowyhl9f+750kfN+3lSX49r8/vnHPv6Y12iCwMiCyCSkSk+k/ezTxBROHZgyMDfuo9IrtLPgeon2GcMIrjIiWwAeKun2MxwNzymsgjYD2L3EJCxAPnqNt4Qv4zyDpPJ3JiY3VPy7pIK6DHQ24RjhLoSmGOI46yhvxP8OU85WmREePRNemxkULulCONcnBCZAgMA55LQ8/F9r47l479VTby0LEMkmYN9dyZvltT13GWdj9snzaYVzB9J3iPjBk8k1mgYT2r2E+zyCVFDkEeMDbh2GriyYR4rpzn2nl8W/1X98NnExZBzxzuxjzQSODs9l1rvc1405hjPWxvw7EDbnCPeOd1P/RyT/QcdesqfukFPGznkJsHL/DwzqtHnzE9FwEPbXY/v1fxW+rRMXoi5kzaH+Y5xrrqWUEuoWc04HnD98F62LZhPbV+/P8APe3Ocz/pz2af9bDN0PFLs59efHv63PeHHn4PPoznFfemCipAPTr+4DzfTfZ65g==
+   eAGVlDtLA0EUha9WVkYIMSFoo7/Ad+GjcQ0WPgpjoRYK2vnAn2BMI4m12AhJmvwCUTvT2CsixEYbTdBSoq3nmLnsZU2CHji7M3fmfnNnmZ1Il8jSoEgSroREqn/0u5knUAScAzBS8E+7V2R/ue4jtHMYp6nrCZESvAXHXJxjUZi55XWRR5jtNHLzcZECXETb6gn5z3DaccLIiY77nLYNkXbYQx2bU1gXjBLc7WGOcwzvGvI/4S/HKc+KjBqOrpkDx8pD7oxzAu+hSZFheATmvlS6L/YPUeN/1IhDxgpcTf4m3Zl1b03bzrT1MB4O7IuxvMk9c+Nz+CbzsMpy1lBPIw7nZqZFjuEsTG2DsdOEk2rBuXScK8ep0/yn1sNvQzWrJ8hZwLlahFVx7J1nT6XtDsdlPIFxy2F/F4w9+AbniGde6+F81kTOSQ97vgoBDvsZ5GbhF3B45pXDb0yRcx7gMG7rYT8o5WicnJDZk8ZbcU6xrnJWkUuTMxbgvOF+sBz2rSynNoD/Dyan03Hu8b9SjFkO+5SOX5h6+nD39Lv7hxzeBx+G84pzU4UrsHJ0/MFxvgGNjn3B
   </data>
  </layer>
  <layer id="4" name="Above Player" width="18" height="18">
   <data encoding="base64" compression="zlib">
-   eAFjYKAfiLCmjl3lVDKHOq4ZNWU0BIgPgWkyCLW48gMucYROBgZkc2idHwpokN9mIIUDsr8Gmg0AeB8F4Q==
+   eAFjYKAfiLCmjl3lUHNsbCHm2UJpck2PhuqPodAccu0f1TdyQmCaDMKvuPIDLnGETgYGZHNg+QFZnprsAirlW2Q3zUAKB2TxgWYDAF0iCAU=
   </data>
  </layer>
  <objectgroup color="#ff0000" id="5" name="Collisions">
-  <object id="1" type="collision" x="48" y="0" width="16" height="128"/>
+  <object id="1" type="collision" x="48" y="0" width="16" height="64"/>
   <object id="2" type="collision" x="64" y="0" width="224" height="32"/>
   <object id="3" type="collision" x="64" y="96" width="80" height="32"/>
   <object id="4" type="collision" x="224" y="32" width="16" height="96"/>
@@ -62,7 +62,7 @@
   <object id="13" type="collision" x="128" y="160" width="16" height="48"/>
   <object id="14" type="collision" x="48" y="160" width="80" height="32"/>
   <object id="15" type="collision" x="0" y="0" width="16" height="288"/>
-  <object id="16" type="collision" x="48" y="192" width="16" height="96"/>
+  <object id="16" type="collision" x="48" y="96" width="16" height="192"/>
   <object id="17" type="collision" x="128" y="240" width="16" height="48"/>
   <object id="18" type="collision" x="192" y="240" width="16" height="48"/>
   <object id="19" type="collision-line" x="64" y="288">
@@ -166,39 +166,121 @@
   </object>
   <object id="42" name="fight 2" type="event" x="144" y="128" width="16" height="16">
    <properties>
-    <property name="act2" value="random_battle 2,3,8"/>
+    <property name="act1" value="random_monster 3,spyder_billie"/>
+    <property name="act2" value="random_monster 5,spyder_billie"/>
+    <property name="act3" value="random_monster 6,spyder_billie"/>
     <property name="act6" value="variable_math fight_count,+,1"/>
     <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act9" value="start_battle player,spyder_billie"/>
     <property name="behav1" value="talk spyder_billie"/>
     <property name="cond1" value="is party_size player,greater_than,1"/>
     <property name="cond2" value="is variable_is fight_count,greater_than,4"/>
     <property name="cond3" value="is variable_is fight_count,less_than,15"/>
    </properties>
   </object>
+  <object id="78" name="fight 4" type="event" x="64" y="144" width="16" height="16">
+   <properties>
+    <property name="act1" value="random_monster 13,spyder_billie"/>
+    <property name="act2" value="random_monster 15,spyder_billie"/>
+    <property name="act3" value="random_monster 16,spyder_billie"/>
+    <property name="act4" value="random_monster 12,spyder_billie"/>
+    <property name="act6" value="variable_math fight_count,+,1"/>
+    <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act9" value="start_battle player,spyder_billie"/>
+    <property name="behav1" value="talk spyder_billie"/>
+    <property name="cond1" value="is party_size player,greater_than,1"/>
+    <property name="cond2" value="is variable_is fight_count,greater_than,24"/>
+    <property name="cond3" value="is variable_is fight_count,less_than,56"/>
+   </properties>
+  </object>
+  <object id="79" name="fight g" type="event" x="32" y="128" width="16" height="16">
+   <properties>
+    <property name="act1" value="random_monster 10,grace,5"/>
+    <property name="act2" value="random_monster 10,grace,5"/>
+    <property name="act4" value="random_monster 12,grace,5,5"/>
+    <property name="act6" value="variable_math fight_count,+,1"/>
+    <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act9" value="start_battle player,grace,music_10_empire"/>
+    <property name="behav1" value="talk grace"/>
+    <property name="cond1" value="is party_size player,greater_than,2"/>
+   </properties>
+  </object>
+  <object id="82" name="fight omni" type="event" x="32" y="160" width="16" height="16">
+   <properties>
+    <property name="act1" value="random_monster 13,omnigrunt,3"/>
+    <property name="act2" value="random_monster 15,omnigrunt,2,2"/>
+    <property name="act3" value="random_monster 16,omnigrunt,2,2"/>
+    <property name="act4" value="random_monster 12,omnigrunt,2,2"/>
+    <property name="act6" value="variable_math fight_count,+,1"/>
+    <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act9" value="start_battle player,omnigrunt,music_14_barbarian_king"/>
+    <property name="behav1" value="talk omnigrunt"/>
+    <property name="cond1" value="is party_size player,greater_than,3"/>
+   </properties>
+  </object>
+  <object id="83" name="fight j" type="event" x="16" y="176" width="16" height="16">
+   <properties>
+    <property name="act1" value="random_monster 18,spyder_routea_jarod"/>
+    <property name="act2" value="random_monster 18,spyder_routea_jarod"/>
+    <property name="act3" value="random_monster 16,spyder_routea_jarod"/>
+    <property name="act4" value="random_monster 22,spyder_routea_jarod,2,2"/>
+    <property name="act6" value="variable_math fight_count,+,1"/>
+    <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act8" value="modify_monster_bond"/>
+    <property name="act9" value="start_battle player, spyder_routea_jarod,music_24_facit_potentiam"/>
+    <property name="behav1" value="talk spyder_routea_jarod"/>
+    <property name="cond1" value="is party_size player,greater_than,3"/>
+   </properties>
+  </object>
+  <object id="80" name="fight t" type="event" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="act1" value="random_monster 5,tallon,5,5"/>
+    <property name="act2" value="random_monster 8,tallon,5,2"/>
+    <property name="act6" value="variable_math fight_count,+,1"/>
+    <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act8" value="modify_monster_bond"/>
+    <property name="act9" value="start_battle player,tallon,music_13_danger"/>
+    <property name="behav1" value="talk tallon"/>
+    <property name="cond1" value="is party_size player,greater_than,1"/>
+   </properties>
+  </object>
+  <object id="81" name="fight s" type="event" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="act1" value="random_monster 6,spyder_lionmountain_snarlon,10,5"/>
+    <property name="act6" value="variable_math fight_count,+,1"/>
+    <property name="act7" value="translated_dialog vivi_fight"/>
+    <property name="act8" value="modify_monster_bond"/>
+    <property name="act9" value="start_battle player,spyder_lionmountain_snarlon,music_06_rebels_be"/>
+    <property name="behav1" value="talk spyder_lionmountain_snarlon"/>
+    <property name="cond1" value="is party_size player,greater_than,0"/>
+   </properties>
+  </object>
   <object id="46" name="fight 3" type="event" x="144" y="160" width="16" height="16">
    <properties>
-    <property name="act2" value="random_battle 3,8,16"/>
+    <property name="act1" value="format_variable monster_0_level,int"/>
+    <property name="act2" value="random_battle 4,5,10"/>
     <property name="act6" value="variable_math fight_count,+,1"/>
     <property name="act7" value="translated_dialog vivi_fight"/>
     <property name="behav1" value="talk spyder_billie"/>
     <property name="cond1" value="is party_size player,greater_than,1"/>
     <property name="cond2" value="is variable_is fight_count,greater_than,14"/>
-    <property name="cond3" value="is variable_is fight_count,less_than,45"/>
+    <property name="cond3" value="is variable_is fight_count,less_than,25"/>
    </properties>
   </object>
-  <object id="45" name="fight 4" type="event" x="80" y="128" width="16" height="16">
+  <object id="45" name="fight 5" type="event" x="80" y="128" width="16" height="16">
    <properties>
-    <property name="act2" value="random_battle 6,10,25"/>
+    <property name="act1" value="format_variable monster_0_level,int"/>
+    <property name="act2" value="random_battle 5,10,20"/>
     <property name="act6" value="variable_math fight_count,+,1"/>
     <property name="act7" value="translated_dialog vivi_fight"/>
     <property name="behav1" value="talk spyder_billie"/>
     <property name="cond1" value="is party_size player,greater_than,1"/>
-    <property name="cond2" value="is variable_is fight_count,greater_than,44"/>
+    <property name="cond2" value="is variable_is fight_count,greater_than,55"/>
    </properties>
   </object>
-  <object id="55" name="fight acolyte" type="event" x="32" y="208" width="16" height="16">
+  <object id="55" name="fight acolyte" type="event" x="16" y="208" width="16" height="16">
    <properties>
-    <property name="act2" value="random_battle 6,10,60"/>
+    <property name="act2" value="random_battle 6,10,25"/>
     <property name="act6" value="variable_math fight_count,+,1"/>
     <property name="act7" value="translated_dialog vivi_fight"/>
     <property name="behav1" value="talk acolyte"/>
@@ -208,7 +290,8 @@
   </object>
   <object id="44" name="fight 1" type="event" x="112" y="128" width="16" height="16">
    <properties>
-    <property name="act2" value="random_battle 1,3,5"/>
+    <property name="act1" value="format_variable monster_0_level,int"/>
+    <property name="act2" value="random_battle 1,2,5"/>
     <property name="act6" value="variable_math fight_count,+,1"/>
     <property name="act7" value="translated_dialog vivi_fight"/>
     <property name="behav1" value="talk spyder_billie"/>
@@ -231,8 +314,13 @@
   </object>
   <object id="52" name="Create keeper" type="event" x="16" y="112" width="16" height="16">
    <properties>
-    <property name="act1" value="create_npc acolyte,1,7"/>
+    <property name="act1" value="create_npc acolyte,1,14"/>
     <property name="act2" value="char_face acolyte,down"/>
+    <property name="act3" value="create_npc grace,1,8"/>
+    <property name="act4" value="create_npc tallon,1,6"/>
+    <property name="act5" value="create_npc omnigrunt,1,10"/>
+    <property name="act6" value="create_npc spyder_routea_jarod,1,12"/>
+    <property name="act7" value="create_npc spyder_lionmountain_snarlon,1,4"/>
     <property name="cond1" value="not char_exists acolyte"/>
    </properties>
   </object>
@@ -266,6 +354,8 @@
     <property name="act3" value="set_variable caravanquest:true"/>
     <property name="act4" value="add_item friendship_scroll"/>
     <property name="act5" value="add_item tuxeball"/>
+    <property name="act7" value="add_item xp_transmitter"/>
+    <property name="act8" value="add_item fishing_rod"/>
     <property name="behav1" value="talk knight2"/>
     <property name="cond1" value="not variable_set caravanquest"/>
    </properties>
@@ -285,6 +375,17 @@
     <property name="act31" value="translated_dialog vivi_nursesayshiding"/>
     <property name="behav1" value="talk spyder_cathedral_nurse"/>
     <property name="cond1" value="is party_size player,equals,0"/>
+    <property name="cond2" value="is variable_set loss_count:0"/>
+   </properties>
+  </object>
+  <object id="77" name="Talk healer died" type="event" x="96" y="80" width="16" height="16">
+   <properties>
+    <property name="act2" value="translated_dialog vivi_grave2"/>
+    <property name="act25" value="translated_dialog vivi_choosemonster"/>
+    <property name="act30" value="translated_dialog_choice yes:no,randomchosen"/>
+    <property name="behav1" value="talk spyder_cathedral_nurse"/>
+    <property name="cond1" value="is party_size player,equals,0"/>
+    <property name="cond2" value="is variable_is loss_count,greater_than,0"/>
    </properties>
   </object>
   <object id="57" name="Talk no mons" type="event" x="160" y="224" width="16" height="16">
@@ -294,7 +395,7 @@
     <property name="cond1" value="is party_size player,equals,0"/>
    </properties>
   </object>
-  <object id="58" name="Talk fewmons" type="event" x="32" y="192" width="16" height="16">
+  <object id="58" name="Talk fewmons" type="event" x="48" y="224" width="16" height="16">
    <properties>
     <property name="act31" value="translated_dialog vivi_scold2"/>
     <property name="behav1" value="talk acolyte"/>

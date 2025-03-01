@@ -12631,7 +12631,7 @@ msgstr "Once upon a time, the world was gray and typeless, and our kingdom joyle
 ###to put in 2nd or 3rd Vivi town
 
 msgid "vivi_heal"
-msgstr "All healed!"
+msgstr "${{monster_0_name}} is all healed! Bond: ${{monster_0_bond}}"
 
 msgid "vivi_lawyer"
 msgstr "I'm a lawyer for tuxemon. They can approach me at any center if they're unhappy. \n Tuxemon vary in intelligence, from Cochini and Boxorox which are like toddlers, to legendaries and psychics smarter than most people. \n Don't assume they think exactly like humans. A wild tuxemon likes fighting and some may eat you if you lose to it!"

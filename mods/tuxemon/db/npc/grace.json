@@ -2,8 +2,8 @@
   "slug": "grace",
   "template": 
     {
-      "sprite_name": "heroine",
-      "combat_front": "heroine",
+      "sprite_name": "brownheroine_brown",
+      "combat_front": "heroine_alt1_black",
       "slug": "heroine"
     }
 
