@@ -12551,13 +12551,16 @@ msgid "vivi_4"
 msgstr "However, resources are scarce right now. Vivi has aggressive neighbors who want to 'free it', and if you lose a fight to their soldiers?"
 
 msgid "vivi_3"
-msgstr "They'll kill your team mates. \n Try to become this year's tournament king or queen to win, or stop the war."
+msgstr "They'll kill your team mates. \n You can try to become the tourney king or queen, or stop the war: the latter story is completely optional."
 
 msgid "vivi_goodluck"
 msgstr "Good luck!"
 
 msgid "vivi_format1"
-msgstr "Randomized battles this way."
+msgstr "Randomized battles. Talk to the nurse for a randomized team, or get specific monster here.\n Note it WILL cause a crash if you typo, so if you're unsure, just cancel."
+
+msgid "wantmon_q"
+msgstr "Input a monster name to get? Example: Nut"
 
 msgid "vivi_format2"
 msgstr "Double battles not yet enabled."
@@ -12646,7 +12649,7 @@ msgid "vivi_joinermon"
 msgstr "A monster interested in joining your team has appeared to challenge you. Knock it out!"
 
 msgid "vivi_scores"
-msgstr "${{var:fight_count}} fights survived this run \n Overall losses ${{var:loss_count}}. Daytime: ${{var:daytime}}"
+msgstr "${{var:fight_count}} fights survived this run \n Overall losses ${{var:loss_count}}."
 
 msgid "vivi_hidemon"
 msgstr "There is a monster hiding there."
@@ -12706,7 +12709,7 @@ msgid "sortitionguy_caravanlost"
 msgstr "It got lost? Damn..."
 
 msgid "caravanguy"
-msgstr "I'm wounded. Can I trust you to take this delivery of pure cash?"
+msgstr "I'm wounded. Can I trust you to take this delivery? (Optional storyline)"
 
 msgid "caravanchoiceselfish"
 msgstr "-Take it for yourself-"
@@ -12714,7 +12717,7 @@ msgstr "-Take it for yourself-"
 msgid "caravanchoicedeliver"
 msgstr "-Take it for delivery-"
 
-msgid "caravangal"
+msgid "caravan2"
 msgstr "We can't make it through safely right now. \n If you could defeat the dangers, we could finish shipping to Random Town."
 
 msgid "priestoftheholysavepoint"

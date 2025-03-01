@@ -57,7 +57,7 @@ events:
     - clear_variable secret_rocky
     - clear_variable rockittenchosen
     - clear_variable lambertchosen
-    - clear_variable agnitechosen
+    - clear_variable randomchosen
     - clear_variable tweesherchosen
     - clear_variable nutchosen
     - clear_variable viviperechosen
@@ -79,6 +79,7 @@ events:
   Intro:
     actions:
     - set_variable deadpet:Hippasus
+    - set_tuxepedia player,asudopt,seen
     - translated_dialog xero_skip_question
     - translated_dialog_choice no:yes,question_skippy
     - change_bg bg_asudopt_hippasus

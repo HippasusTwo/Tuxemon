@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="18" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="74">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="18" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="77">
  <properties>
   <property name="edges" value="clamped"/>
   <property name="inside" type="bool" value="true"/>
@@ -57,7 +57,8 @@
   <object id="10" type="collision" x="192" y="160" width="80" height="32"/>
   <object id="11" type="collision" x="192" y="192" width="48" height="16"/>
   <object id="12" type="collision" x="256" y="192" width="16" height="16"/>
-  <object id="64" type="collision" x="224" y="272" width="16" height="16"/>
+  <object id="64" type="collision" x="224" y="256" width="16" height="16"/>
+  <object id="76" type="collision" x="96" y="256" width="16" height="16"/>
   <object id="13" type="collision" x="128" y="160" width="16" height="48"/>
   <object id="14" type="collision" x="48" y="160" width="80" height="32"/>
   <object id="15" type="collision" x="0" y="0" width="16" height="288"/>
@@ -79,14 +80,6 @@
   <object id="35" type="collision" x="176" y="48" width="48" height="16"/>
  </objectgroup>
  <objectgroup color="#ffff00" id="6" name="Events">
-  <object id="22" name="Teleport to Top" type="event" x="0" y="0" width="16" height="16">
-   <properties>
-    <property name="act10" value="transition_teleport mansion_top.tmx,1,16,0.3"/>
-    <property name="act20" value="char_face player,up"/>
-    <property name="cond10" value="is char_at player"/>
-    <property name="cond20" value="is char_facing player,up"/>
-   </properties>
-  </object>
   <object id="23" name="Teleport to Basement" type="event" x="0" y="256" width="16" height="16">
    <properties>
     <property name="act10" value="transition_teleport mansion_basement.tmx,6,20,0.3"/>
@@ -101,14 +94,6 @@
     <property name="act20" value="char_face player,down"/>
     <property name="cond10" value="is char_at player"/>
     <property name="cond20" value="is char_facing player,down"/>
-   </properties>
-  </object>
-  <object id="25" name="Teleport to Top" type="event" x="48" y="0" width="16" height="16">
-   <properties>
-    <property name="act10" value="transition_teleport mansion_top.tmx,2,16,0.3"/>
-    <property name="act20" value="char_face player,up"/>
-    <property name="cond10" value="is char_at player"/>
-    <property name="cond20" value="is char_facing player,up"/>
    </properties>
   </object>
   <object id="28" name="Teleport to Side Route" type="event" x="144" y="272" width="48" height="16">
@@ -130,6 +115,7 @@
   <object id="39" name="msg format1" type="event" x="112" y="208" width="16" height="16">
    <properties>
     <property name="act10" value="translated_dialog vivi_format1"/>
+    <property name="act11" value="input_variable wantmon_q,response_q,escape"/>
     <property name="cond10" value="is char_facing_tile player"/>
     <property name="cond20" value="is button_pressed K_RETURN"/>
    </properties>
@@ -273,18 +259,29 @@
     <property name="cond1" value="is party_size player,greater_than,0"/>
    </properties>
   </object>
-  <object id="60" name="Talk healer" type="event" x="256" y="96" width="16" height="16">
+  <object id="60" name="Talk guy" type="event" x="256" y="96" width="16" height="16">
    <properties>
     <property name="act1" value="translated_dialog caravanguy"/>
+    <property name="act2" value="add_item app_tuxepedia"/>
+    <property name="act3" value="set_variable caravanquest:true"/>
+    <property name="act4" value="add_item friendship_scroll"/>
+    <property name="act5" value="add_item tuxeball"/>
     <property name="behav1" value="talk knight2"/>
+    <property name="cond1" value="not variable_set caravanquest"/>
+   </properties>
+  </object>
+  <object id="75" name="Talk guy" type="event" x="256" y="112" width="16" height="16">
+   <properties>
+    <property name="act1" value="translated_dialog caravan2"/>
+    <property name="behav1" value="talk knight2"/>
+    <property name="cond1" value="is variable_set caravanquest"/>
    </properties>
   </object>
   <object id="56" name="Talk healer no mon" type="event" x="80" y="80" width="16" height="16">
    <properties>
-    <property name="act10" value="change_state JournalInfoState,medipup"/>
     <property name="act11" value="change_state JournalInfoState,vivipere"/>
     <property name="act25" value="translated_dialog vivi_choosemonster"/>
-    <property name="act30" value="translated_dialog_choice yes:no,viviperechosen"/>
+    <property name="act30" value="translated_dialog_choice yes:no,randomchosen"/>
     <property name="act31" value="translated_dialog vivi_nursesayshiding"/>
     <property name="behav1" value="talk spyder_cathedral_nurse"/>
     <property name="cond1" value="is party_size player,equals,0"/>
@@ -304,21 +301,30 @@
     <property name="cond1" value="is party_size player,less_than,5"/>
    </properties>
   </object>
-  <object id="61" name="Chosen - vivipere" type="event" x="176" y="0" width="16" height="16">
+  <object id="61" name="Chosen - random" type="event" x="176" y="0" width="16" height="16">
    <properties>
     <property name="act1" value="add_monster vivipere,5"/>
     <property name="act10" value="rename_monster iid_slot_2"/>
-    <property name="act11" value="add_monster foxfire,5"/>
-    <property name="act2" value="add_monster medipup,5"/>
-    <property name="act3" value="add_monster axolightl,5"/>
-    <property name="act4" value="set_variable mymonchoice:Medipup"/>
+    <property name="act11" value="random_monster 5,player,,,polliwog,basic"/>
+    <property name="act12" value="set_variable firstfightdue:yes"/>
+    <property name="act2" value="random_monster 5,player,,,varmint,basic"/>
+    <property name="act3" value="random_monster 5,player,,,brute,basic"/>
+    <property name="act4" value="set_variable mymonchoice:Vivipere"/>
     <property name="act5" value="get_party_monster"/>
     <property name="act6" value="rename_monster iid_slot_1"/>
     <property name="act7" value="rename_monster iid_slot_0"/>
-    <property name="act8" value="add_monster fordin,5"/>
-    <property name="act9" value="add_monster devidin,5"/>
-    <property name="cond1" value="is variable_set viviperechosen:yes"/>
+    <property name="act8" value="random_monster 5,player,,,,basic"/>
+    <property name="act9" value="random_monster 5,player,,,hunter,basic"/>
+    <property name="cond1" value="is variable_set randomchosen:yes"/>
     <property name="cond2" value="is party_size player,less_than,1"/>
+   </properties>
+  </object>
+  <object id="74" name="Chosen - any" type="event" x="240" y="160" width="16" height="16">
+   <properties>
+    <property name="act1" value="add_monster response_q,10"/>
+    <property name="act4" value="set_variable mymonchoice:response_q"/>
+    <property name="act5" value="clear_variable response_q"/>
+    <property name="cond1" value="is variable_set response_q"/>
    </properties>
   </object>
   <object id="63" name="Open Shop" type="event" x="192" y="48" width="16" height="16">

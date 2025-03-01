@@ -295,7 +295,7 @@
     <property name="act4" value="set_variable mymonchoice:Random"/>
     <property name="act5" value="get_party_monster"/>
     <property name="act6" value="rename_monster iid_slot_0"/>
-    <property name="cond1" value="is variable_set agnitechosen:yes"/>
+    <property name="cond1" value="is variable_set randomchosen:yes"/>
     <property name="cond2" value="is party_size player,less_than,1"/>
    </properties>
   </object>
@@ -573,7 +573,7 @@
    <properties>
     <property name="act05" value="translated_dialog spyder_papertown_thereis"/>
     <property name="act25" value="translated_dialog vivi_choosemonster"/>
-    <property name="act30" value="translated_dialog_choice yes:no,agnitechosen"/>
+    <property name="act30" value="translated_dialog_choice yes:no,randomchosen"/>
     <property name="cond1" value="is char_facing_tile player"/>
     <property name="cond2" value="is button_pressed K_RETURN"/>
     <property name="cond3" value="is party_size player,less_than,1"/>
