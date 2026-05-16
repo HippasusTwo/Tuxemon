@@ -75,8 +75,8 @@ class CaptureEffect(CoreEffect):
 
     def _apply_capture_effects(self, item: Item, target: Monster) -> None:
         formula.on_capture_success(item, target, self.session.player)
-        if self.session.player.tuxepedia.is_seen(target.slug):
-            self.client.combat_session.set_variable("new_tuxepedia", True)
+        if self.session.player.tuxepedia.is_caught(target.slug) == False:
+            self.Client.combat_session.set_variable("new_tuxepedia", True) #never triggers even if set outside if
         self.session.player.tuxepedia.register_caught(target.slug)
         target.capture_device = item.slug
         target.wild = False

@@ -52,10 +52,12 @@ from tuxemon.combat.reward_system import RewardSystem
 from tuxemon.combat.utils import get_battle_outcome_music, track_battles
 from tuxemon.database.rules import config_combat
 from tuxemon.db import (
+    MonsterModel,
     EffectPhase,
     ItemCategory,
     OutputBattle,
 )
+from tuxemon.database.runtime import db
 from tuxemon.entity.npc import NPC
 from tuxemon.graphics import load_and_scale
 from tuxemon.item.item import Item
@@ -77,6 +79,7 @@ from tuxemon.ui.method_animation import MethodAnimationCache
 from tuxemon.ui.text import TextArea
 from tuxemon.ui.text_alignment import HorizontalAlignment
 from tuxemon.user_config import CONFIG
+from tuxemon.session import Session
 
 if TYPE_CHECKING:
     from tuxemon.base_client import BaseClient
@@ -1005,7 +1008,7 @@ class CombatState(CombatAnimations):
     def end_combat(self) -> None:
         """End the combat."""
         self.event_bus.publish("clean_combat")
-        new_entry = self.combat_session.get_variable("new_tuxepedia")
+        new_entry = self.combat_session.get_variable("new_tuxepedia") #this never seemed to trigger / store anything
         self.combat_session.reset()
         self.unregister_event_handlers()
         self.client.current_music.stop()
@@ -1013,10 +1016,24 @@ class CombatState(CombatAnimations):
         self.clear_combat_states()
         self.phase = None
 
-        if new_entry and self._captured_mon:
+        if self._captured_mon and new_entry:
             self.client.remove_state_by_name("CombatState")
-            params = {"monster": self._captured_mon, "source": self.name}
-            self.client.push_state("MonsterInfoState", **params)
+            
+            journal = MonsterModel.lookup(self._captured_mon.slug, db)
+            if journal is None:
+                logger.error(
+                    f"Monster with slug '{self._captured_mon.slug}' not found for JournalInfoState."
+                )
+                self.stop()
+                return
+
+            self.client.push_state(
+                "JournalInfoState",
+                character=self.session.player,
+                monster=journal,
+                source=self.name,
+                reveal=True,
+            )
         else:
             self.client.push_state("FadeOutTransition", caller=self)
 

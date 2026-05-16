@@ -112,7 +112,7 @@ class CaptureCombinedEffect(CoreEffect):
             return capdev_modifier
 
     def _apply_capture_effects(self, item: Item, target: Monster) -> None:
-        if self.session.player.tuxepedia.is_seen(target.slug):
+        if self.session.player.tuxepedia.is_caught(target.slug)  == False:
             self.client.combat_session.set_variable("new_tuxepedia", True)
         self.session.player.tuxepedia.register_caught(target.slug)
         target.capture_device = item.slug
