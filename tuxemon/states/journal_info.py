@@ -9,7 +9,7 @@ from pygame_menu.menu import Menu
 
 from tuxemon import formula
 from tuxemon.database.runtime import db
-from tuxemon.db import MonsterModel
+from tuxemon.db import MonsterModel, MonsterSpritesModel
 from tuxemon.locale.locale import T
 from tuxemon.menu.menu import PygameMenuState
 from tuxemon.monster.sprite import MonsterSpriteHandler, SpriteLoader
@@ -210,6 +210,22 @@ class JournalInfoState(PygameMenuState):
 
             lab5a.translate(fxw(132), fxh(51))
 
+            if monster.slug == "ignibus" and self.shiny == True: #The only monster in the game with a type changed morph.
+                type2_text = self._safe_display("water")
+
+                lab5b = menu.add.label(
+                    title=f"{type2_text}{menu_type_suffix}",
+                    label_id="type_loaded_2",
+                    font_size=self.font_type.biggest,
+                    font_name=minimal_font,
+                    align=ALIGN_LEFT,
+                    float=True,
+                    float_origin_position=True,
+                    padding=0,
+                )
+
+                lab5b.translate(fxw(164), fxh(57))
+
         # shape
         menu_shape = T.translate("monster_menu_shape_short")
         _shape = T.translate(monster.shape)
@@ -327,7 +343,13 @@ class JournalInfoState(PygameMenuState):
 
         # image
         loader = SpriteLoader()
-        sprites = monster.sprites
+       #sprites = monster.sprites
+        if self.shiny == False:
+            sprites = MonsterSpritesModel(
+                sheet=f"gfx/sprites/battle/{monster.slug}-sheet",)
+        else:
+             sprites = MonsterSpritesModel(
+                sheet=f"gfx/sprites/battle/morphs/{monster.slug}-sheet",)
         assert sprites
         handler = MonsterSpriteHandler(
             slug=monster.slug,
@@ -353,10 +375,15 @@ class JournalInfoState(PygameMenuState):
         monster: MonsterModel | None,
         source: str,
         reveal: bool = False,
+        shiny: bool | None = None,
         **kwargs: Any,
     ) -> None:
         MonsterModel.load_cache(db)
         self.cache = MonsterModel.get_cache()
+        if shiny:
+            self.shiny = shiny
+        else:
+            self.shiny = False
 
         if monster is None:
             raise ValueError("No monster")
@@ -411,12 +438,26 @@ class JournalInfoState(PygameMenuState):
             client.replace_state(
                 "JournalInfoState",
                 character=self.char,
+                shiny=self.shiny,
                 monster=monster_models[new_index],
                 source=self.name,
             )
             return None
+        elif ( # A to cycle info / morphs
+            event.button == buttons.A
+            and event.pressed
+        ):
+            self.shiny = not self.shiny # flip the binary value
 
-        # A / B / BACK → close (pressed only)
+            client.replace_state(
+                "JournalInfoState",
+                character=self.char,
+                shiny=self.shiny,
+                monster=self._monster,
+                source=self.name,
+            )
+             
+        #  B / BACK → close (pressed only)
         elif (
             event.button in (buttons.BACK, buttons.B, buttons.A)
             and event.pressed
