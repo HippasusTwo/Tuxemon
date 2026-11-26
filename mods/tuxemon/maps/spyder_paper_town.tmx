@@ -646,17 +646,9 @@
     <property name="cond2" value="not variable_set visitcottonmart:yes"/>
    </properties>
   </object>
-  <object id="291" name="Following" type="event" x="400" y="256" width="16" height="16">
-   <properties>
-    <property name="act10" value="pathfind_to_player starter,,1"/>
-    <property name="cond2" value="is char_exists starter"/>
-    <property name="cond3" value="not char_moved player"/>
-    <property name="cond5" value="not button_pressed INTERACT"/>
-   </properties>
-  </object>
   <object id="307" name="Following" type="event" x="416" y="256" width="16" height="16">
    <properties>
-    <property name="act1" value="pathfind_to_player starter,up,1"/>
+    <property name="act1" value="pathfind_to_char player, starter,up,1"/>
     <property name="act2" value="char_face starter,down"/>
     <property name="cond2" value="is char_exists starter"/>
     <property name="cond3" value="is button_pressed INTERACT"/>
@@ -666,9 +658,10 @@
   <object id="292" name="Follower Create Cat" type="event" x="384" y="304" width="16" height="16">
    <properties>
     <property name="act1" value="create_npc starter,25,9,stand"/>
-    <property name="act10" value="pathfind_to_player starter"/>
+    <property name="act10" value="pathfind_to_char player, starter"/>
     <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
+    <property name="act4" value="wait 1"/>
     <property name="cond1" value="is variable_set mymonchoice:rockitten"/>
     <property name="cond2" value="not char_exists starter"/>
    </properties>
@@ -679,7 +672,7 @@
     <property name="act2" value="set_template starter,mons/lambert,adventurer"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
     <property name="act4" value="set_char_attribute starter,ignore_collisions,True"/>
-    <property name="act9" value="pathfind_to_player starter"/>
+    <property name="act9" value="pathfind_to_char player, starter"/>
     <property name="cond1" value="is variable_set mymonchoice:lambert"/>
     <property name="cond2" value="not char_exists starter"/>
    </properties>
@@ -690,7 +683,7 @@
     <property name="act2" value="set_template starter,mons/agnite,adventurer"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
     <property name="act4" value="set_char_attribute starter,ignore_collisions,True"/>
-    <property name="act9" value="pathfind_to_player starter"/>
+    <property name="act9" value="pathfind_to_char player, starter"/>
     <property name="cond1" value="is variable_set mymonchoice:agnite"/>
     <property name="cond2" value="not char_exists starter"/>
    </properties>

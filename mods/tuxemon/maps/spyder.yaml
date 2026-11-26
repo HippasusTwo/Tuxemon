@@ -193,7 +193,6 @@ events:
   Follower Rockitten Outside:
     actions:
     - create_npc starter,4,4,stand
-    - teleport_to_player starter,,8
     - set_char_attribute starter,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes
@@ -205,7 +204,6 @@ events:
   Follower Nut:
     actions:
     - create_npc starter,4,4,stand
-    - teleport_to_player starter,,8
     - set_template starter,mons/nut,adventurer
     - set_char_attribute starter,ignore_collisions,True
     conditions:
@@ -218,7 +216,6 @@ events:
   Follower Lambert:
     actions:
     - create_npc starter,4,4,stand
-    - teleport_to_player starter,,8
     - set_template starter,mons/lambert,adventurer
     - set_char_attribute starter,ignore_collisions,True
     conditions:
@@ -231,7 +228,6 @@ events:
   Follower Dragon:
     actions:
     - create_npc starter,4,4,stand
-    - teleport_to_player starter,,8
     - set_template starter,mons/agnite,adventurer
     - set_char_attribute starter,ignore_collisions,True
     conditions:
@@ -244,7 +240,6 @@ events:
   Follower Birb:
     actions:
     - create_npc starter,4,4,stand
-    - teleport_to_player starter,,8
     - set_template starter,mons/tweesher,adventurer
     - set_char_attribute starter,ignore_collisions,True
     conditions:
@@ -256,30 +251,32 @@ events:
     type: "event"
   Following:
     actions:
-    - pathfind_to_player starter,,1
+    - pathfind_to_char player,starter,,1
+    - wait .1
     conditions:
     - is char_exists starter
     type: "event"
   Follower Damaged:
     actions:
     - translated_dialog starter_wants_rest
-    - pathfind_to_player starter,,5
+    - pathfind_to_char player,starter,,5
     conditions:
-    - is get_monster_unhealthy player
+    - not char_healed player
     - is char_exists starter
-    - is button_pressed K_RETURN
+    - is button_pressed INTERACT
     - is char_facing_char player,starter
     type: "event"
   Follower Talk:
     actions:
     - translated_dialog starter_talk
-    - pathfind_to_player starter,,5
+    - pathfind_to_char player,starter,,5
     conditions:
-    - not get_monster_unhealthy player
+    - is char_healed player
     - is char_exists starter
-    - is button_pressed K_RETURN
+    - is button_pressed INTERACT
     - is char_facing_char player,starter
     - not location_name spyder_paper_town
+    - is variable_set visitcottonmart:yes
     type: "event"
   Set Party Status:
     actions:
