@@ -14,17 +14,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.3.2\n"
 
-msgid "starter_happy_not_trash"
+
+### Follower Mon Messages
+msgid "follower_slug_happy_not_trash"
 msgstr "They are very happy not to be in the trash.\n They seem to want to hang out for a little while in fresh air. Who could blame them?"
 
-msgid "starter_wants_rest"
+msgid "follower_slug_wants_rest"
 msgstr "They look like they could use a rest."
 
-msgid "starter_talk"
+msgid "follower_slug_talk"
 msgstr "They seem ready to rumble or play."
 
-msgid "starter_mischief"
+msgid "follower_slug_mischief"
 msgstr "Ew! They smell like they went digging in the trash again! Why?!\n ...Perhaps they were looking for other abandoned Tuxemon to free them?"
+
+msgid "unfollow_msg"
+msgstr "End following?"
+
+msgid "start_follow_q"
+msgstr "Start following?
 
 # ITEM TRANSLATIONS ##
 msgid "cosmic_berry"

@@ -648,77 +648,77 @@
   </object>
   <object id="307" name="Following" type="event" x="416" y="256" width="16" height="16">
    <properties>
-    <property name="act1" value="pathfind_to_char player, starter,up,1"/>
-    <property name="act2" value="char_face starter,down"/>
-    <property name="cond2" value="is char_exists starter"/>
+    <property name="act1" value="pathfind_to_char player, follower_slug,up,1"/>
+    <property name="act2" value="char_face follower_slug,down"/>
+    <property name="cond2" value="is char_exists follower_slug"/>
     <property name="cond3" value="is button_pressed INTERACT"/>
     <property name="cond5" value="is char_facing player,down"/>
    </properties>
   </object>
   <object id="292" name="Follower Create Cat" type="event" x="384" y="304" width="16" height="16">
    <properties>
-    <property name="act1" value="create_npc starter,25,9,stand"/>
-    <property name="act10" value="pathfind_to_char player, starter"/>
-    <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act1" value="create_npc follower_slug,25,9,stand"/>
+    <property name="act10" value="pathfind_to_char player, follower_slug"/>
+    <property name="act2" value="set_char_attribute follower_slug,ignore_collisions,True"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
     <property name="act4" value="wait 1"/>
     <property name="cond1" value="is variable_set mymonchoice:rockitten"/>
-    <property name="cond2" value="not char_exists starter"/>
+    <property name="cond2" value="not char_exists follower_slug"/>
    </properties>
   </object>
   <object id="293" name="Template - Lambert" type="event" x="528" y="304" width="16" height="16">
    <properties>
-    <property name="act1" value="create_npc starter,24,11,stand"/>
-    <property name="act2" value="set_template starter,mons/lambert,adventurer"/>
+    <property name="act1" value="create_npc follower_slug,24,11,stand"/>
+    <property name="act2" value="set_template follower_slug,mons/lambert,adventurer"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
-    <property name="act4" value="set_char_attribute starter,ignore_collisions,True"/>
-    <property name="act9" value="pathfind_to_char player, starter"/>
+    <property name="act4" value="set_char_attribute follower_slug,ignore_collisions,True"/>
+    <property name="act9" value="pathfind_to_char player, follower_slug"/>
     <property name="cond1" value="is variable_set mymonchoice:lambert"/>
-    <property name="cond2" value="not char_exists starter"/>
+    <property name="cond2" value="not char_exists follower_slug"/>
    </properties>
   </object>
   <object id="294" name="Follow - Agnite" type="event" x="464" y="288" width="16" height="16">
    <properties>
-    <property name="act1" value="create_npc starter,28,11,stand"/>
-    <property name="act2" value="set_template starter,mons/agnite,adventurer"/>
+    <property name="act1" value="create_npc follower_slug,28,11,stand"/>
+    <property name="act2" value="set_template follower_slug,mons/agnite,adventurer"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
-    <property name="act4" value="set_char_attribute starter,ignore_collisions,True"/>
-    <property name="act9" value="pathfind_to_char player, starter"/>
+    <property name="act4" value="set_char_attribute follower_slug,ignore_collisions,True"/>
+    <property name="act9" value="pathfind_to_char player, follower_slug"/>
     <property name="cond1" value="is variable_set mymonchoice:agnite"/>
-    <property name="cond2" value="not char_exists starter"/>
+    <property name="cond2" value="not char_exists follower_slug"/>
    </properties>
   </object>
   <object id="295" name="Template- Nut" type="event" x="336" y="272" width="16" height="16">
    <properties>
-    <property name="act1" value="create_npc starter,26,10,stand"/>
-    <property name="act10" value="set_template starter,mons/nut,adventurer"/>
-    <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act1" value="create_npc follower_slug,26,10,stand"/>
+    <property name="act10" value="set_template follower_slug,mons/nut,adventurer"/>
+    <property name="act2" value="set_char_attribute follower_slug,ignore_collisions,True"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
     <property name="cond1" value="is variable_set mymonchoice:nut"/>
-    <property name="cond2" value="not char_exists starter"/>
+    <property name="cond2" value="not char_exists follower_slug"/>
    </properties>
   </object>
   <object id="297" name="FollowTemplate - Tweesher" type="event" x="272" y="304" width="16" height="16">
    <properties>
-    <property name="act1" value="create_npc starter,28,10,stand"/>
-    <property name="act10" value="set_template starter,mons/tweesher,penguin"/>
-    <property name="act2" value="set_char_attribute starter,ignore_collisions,True"/>
+    <property name="act1" value="create_npc follower_slug,28,10,stand"/>
+    <property name="act10" value="set_template follower_slug,mons/tweesher,penguin"/>
+    <property name="act2" value="set_char_attribute follower_slug,ignore_collisions,True"/>
     <property name="act3" value="set_variable spawnedfollower:yes"/>
     <property name="cond1" value="is variable_set mymonchoice:tweesher"/>
-    <property name="cond2" value="not char_exists starter"/>
+    <property name="cond2" value="not char_exists follower_slug"/>
    </properties>
   </object>
-  <object id="298" name="Talk Starter" type="event" x="448" y="256" width="16" height="16">
+  <object id="298" name="Talk follower_slug" type="event" x="448" y="256" width="16" height="16">
    <properties>
-    <property name="act1" value="translated_dialog starter_happy_not_trash"/>
-    <property name="behav1" value="talk starter"/>
+    <property name="act1" value="translated_dialog follower_slug_happy_not_trash"/>
+    <property name="behav1" value="talk follower_slug"/>
     <property name="cond1" value="not variable_set route2billie:yes"/>
    </properties>
   </object>
-  <object id="308" name="Talk Starter" type="event" x="464" y="256" width="16" height="16">
+  <object id="308" name="Talk follower_slug" type="event" x="464" y="256" width="16" height="16">
    <properties>
-    <property name="act1" value="translated_dialog starter_mischief"/>
-    <property name="behav1" value="talk starter"/>
+    <property name="act1" value="translated_dialog follower_slug_mischief"/>
+    <property name="behav1" value="talk follower_slug"/>
     <property name="cond1" value="is variable_set route2billie:yes"/>
    </properties>
   </object>

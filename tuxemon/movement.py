@@ -391,16 +391,12 @@ class Pathfinder:
 
         if ignore_collisions: #the player can walk anywhere if you force return true for everyone
             return True
-        #startit = self.npc_manager._on_map._data.keys()
-        #startit = self.npc_manager._on_map._data['starter']
-        
-        if self.npc_manager._on_map._data['starter'] is not None:
-            starter = self.npc_manager._on_map._data['starter']
-            if starter.tile_pos == tile:
+        keyys = self.npc_manager._on_map._data #seems to make the game really slow, but cures hissyfit python throws.
+        if 'follower_slug' in keyys:
+            follower = self.npc_manager._on_map._data['follower_slug']
+            if follower.tile_pos == tile:
                 return True
-            if starter.tile_pos == tile_pos:
-                #print("trying to walk thru") #likes to only work if it is moving. Because tile_pos is critter?
-                return True # walk through special starter"""
+           # if follower.tile_pos == tile_pos: #a way to check for if you are the same character.
 
         if tile not in self.get_exits(tile_pos, facing):
             return False

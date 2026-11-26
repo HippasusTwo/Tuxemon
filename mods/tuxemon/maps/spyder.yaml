@@ -193,89 +193,88 @@ events:
   Follower Rockitten Outside:
     actions:
     - wait 2
-    - create_npc starter,-1,-1,stand,player
-    - set_char_attribute starter,ignore_collisions,True
+    - create_npc follower_slug,-1,-1,stand,player
+    - set_char_attribute follower_slug,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes
     - is variable_set mymonchoice:rockitten
     - not location_inside
     - not location_name spyder_paper_town
-    - not char_exists starter
+    - not char_exists follower_slug
     type: "event"
   Follower Nut:
     actions:
-    - create_npc starter,4,4,stand
-    - set_template starter,mons/nut,adventurer
-    - set_char_attribute starter,ignore_collisions,True
+    - create_npc follower_slug,4,4,stand
+    - set_template follower_slug,mons/nut,adventurer
+    - set_char_attribute follower_slug,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes
     - is variable_set mymonchoice:nut
     - not location_inside
     - not location_name spyder_paper_town
-    - not char_exists starter
+    - not char_exists follower_slug
     type: "event"
   Follower Lambert:
     actions:
-    - create_npc starter,4,4,stand
-    - set_template starter,mons/lambert,adventurer
-    - set_char_attribute starter,ignore_collisions,True
+    - create_npc follower_slug,4,4,stand
+    - set_template follower_slug,mons/lambert,adventurer
+    - set_char_attribute follower_slug,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes
     - is variable_set mymonchoice:lambert
     - not location_inside
     - not location_name spyder_paper_town
-    - not char_exists starter
+    - not char_exists follower_slug
     type: "event"
   Follower Dragon:
     actions:
-    - create_npc starter,4,4,stand
-    - set_template starter,mons/agnite,adventurer
-    - set_char_attribute starter,ignore_collisions,True
+    - create_npc follower_slug,4,4,stand
+    - set_template follower_slug,mons/agnite,adventurer
+    - set_char_attribute follower_slug,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes
     - is variable_set mymonchoice:agnite
     - not location_inside
     - not location_name spyder_paper_town
-    - not char_exists starter
+    - not char_exists follower_slug
     type: "event"
   Follower Birb:
     actions:
-    - create_npc starter,4,4,stand
-    - set_template starter,mons/tweesher,adventurer
-    - set_char_attribute starter,ignore_collisions,True
+    - create_npc follower_slug,4,4,stand
+    - set_template follower_slug,mons/tweesher,adventurer
+    - set_char_attribute follower_slug,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes
     - is variable_set mymonchoice:tweesher
     - not location_inside
     - not location_name spyder_paper_town
-    - not char_exists starter
-    type: "event"
+    - not char_exists follower_slug
   Following:
     actions:
-    - pathfind_to_char player,starter,,1
-    - wait .1
+    - pathfind_to_char player,follower_slug,,1
+    - wait .01
     conditions:
-    - is char_exists starter
+    - is char_exists follower_slug
     type: "event"
   Follower Damaged:
     actions:
     - translated_dialog starter_wants_rest
-    - pathfind_to_char player,starter,,5
+    - pathfind_to_char player,follower_slug,,5
     conditions:
     - not char_healed player
-    - is char_exists starter
+    - is char_exists follower_slug
     - is button_pressed INTERACT
-    - is char_facing_char player,starter
+    - is char_facing_char player,follower_slug
     type: "event"
   Follower Talk:
     actions:
     - translated_dialog starter_talk
-    - pathfind_to_char player,starter,,5
+    - pathfind_to_char player,follower_slug,,5
     conditions:
     - is char_healed player
-    - is char_exists starter
+    - is char_exists follower_slug
     - is button_pressed INTERACT
-    - is char_facing_char player,starter
+    - is char_facing_char player,follower_slug
     - not location_name spyder_paper_town
     - is variable_set visitcottonmart:yes
     type: "event"
