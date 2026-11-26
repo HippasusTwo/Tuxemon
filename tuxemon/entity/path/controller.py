@@ -174,6 +174,8 @@ class PathController:
             self.animation_policy.on_face(self.owner, direction)
 
         try:
+            if (self.owner.slug == "starter"):
+                self.owner.ignore_collisions = True
             if self._pathfinder.is_tile_traversable(
                 self.owner.tile_pos,
                 self.owner.facing,

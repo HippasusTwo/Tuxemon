@@ -50,7 +50,8 @@ class CreateNpcAction(EventAction):
     npc_slug: str
     tile_pos_x: int
     tile_pos_y: int
-    behavior: str | None = None
+    behavior: str | None = None,
+    spawn_near: str | None = None
 
     def start(self, session: Session) -> None:
         slug = self.npc_slug
@@ -58,6 +59,23 @@ class CreateNpcAction(EventAction):
         if session.client.npc_manager.npc_exists(slug):
             self.stop()
             return
+
+        if self.tile_pos_x == -1: #fake tile, 'teleport' close
+            character = session.client.get_npc(self.spawn_near)
+            if(character.tile_pos[0] < 2 or character.tile_pos[1] < 2 or character.facing == "up" or session.client.map_manager.map_size == character.tile_pos[1]):
+                self.tile_pos_x = 4
+                self.tile_pos_y = 4
+            elif(character.facing == "down"):
+                self.tile_pos_x = character.tile_pos[0] + 1
+                self.tile_pos_y = character.tile_pos[1] - 1
+            else:
+                self.tile_pos_x = character.tile_pos[0] + 2
+                self.tile_pos_y = character.tile_pos[1] + 2
+            #destined = (self.tile_pos_x, self.tile_pos_y)
+            #map_boundary = MapConditionBoundary(session.current_condition_box)
+            #if not map_boundary.is_within(destined):
+             #   self.tile_pos_x = 4
+              #  self.tile_pos_y = 4
 
         npc = NPC.create(session, slug)
         session.client.npc_manager.place_npc_on_map(

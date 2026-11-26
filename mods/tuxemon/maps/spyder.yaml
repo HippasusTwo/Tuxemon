@@ -192,7 +192,8 @@ events:
     type: event
   Follower Rockitten Outside:
     actions:
-    - create_npc starter,4,4,stand
+    - wait 2
+    - create_npc starter,-1,-1,stand,player
     - set_char_attribute starter,ignore_collisions,True
     conditions:
     - is variable_set spawnedfollower:yes

@@ -388,8 +388,19 @@ class Pathfinder:
         ignore_collisions: bool,
     ) -> bool:
         """Checks if a tile is traversable for the given NPC."""
-        if ignore_collisions:
+
+        if ignore_collisions: #the player can walk anywhere if you force return true for everyone
             return True
+        #startit = self.npc_manager._on_map._data.keys()
+        #startit = self.npc_manager._on_map._data['starter']
+        
+        if self.npc_manager._on_map._data['starter'] is not None:
+            starter = self.npc_manager._on_map._data['starter']
+            if starter.tile_pos == tile:
+                return True
+            if starter.tile_pos == tile_pos:
+                #print("trying to walk thru") #likes to only work if it is moving. Because tile_pos is critter?
+                return True # walk through special starter"""
 
         if tile not in self.get_exits(tile_pos, facing):
             return False
